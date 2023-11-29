@@ -40,9 +40,9 @@ const Header = () => {
                   <div className="logos mr40">
                     <Link className="header-logo logo1" href="/">
                       <Image
-                        width={138}
-                        height={44}
-                        src="/images/header-logo.svg"
+                        width={180}
+                        height={60}
+                        src="/images/logo_inv.svg"
                         alt="Header Logo"
                       />
                     </Link>
@@ -50,7 +50,7 @@ const Header = () => {
                       <Image
                         width={138}
                         height={44}
-                        src="/images/header-logo2.svg"
+                        src="/images/logo_inv.svg"
                         alt="Header Logo"
                       />
                     </Link>
@@ -75,13 +75,13 @@ const Header = () => {
                     <i className="far fa-user-circle fz16 me-2" />{" "}
                     <span className="d-none d-xl-block">Login / Register</span>
                   </a>
-                  <Link
-                    className="ud-btn btn-white add-property bdrs12 mx-2 mx-xl-4 border-0"
+                  {/* <Link
+                    className="ud-btn btn-thm add-property bdrs12 mx-2 mx-xl-4 border-0"
                     href="/dashboard-add-property"
                   >
                     Add Property
                     <i className="fal fa-arrow-right-long" />
-                  </Link>
+                  </Link> */}
                   <a
                     className="sidemenu-btn filter-btn-right"
                     href="#"

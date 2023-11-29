@@ -57,14 +57,14 @@ const MainMenu = () => {
   return (
     <ul className="ace-responsive-menu">
       <li className="visible_list dropitem">
-        <a className="list-item" href="#">
+        <a className="list-item" href="/">
           <span className={topMenu == "home" ? "title menuActive" : "title"}>
             Home
           </span>
-          <span className="arrow"></span>
+          {/* <span className="arrow"></span> */}
         </a>
         {/* Level Two*/}
-        <ul className="sub-menu">
+        {/* <ul className="sub-menu">
           {homeItems.map((item, index) => (
             <li key={index}>
               <Link className={`${handleActive(item.href)}`} href={item.href}>
@@ -72,18 +72,18 @@ const MainMenu = () => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </li>
       {/* End homeItems */}
 
       <li className="megamenu_style dropitem">
-        <a className="list-item" href="#">
+        <a className="list-item" href="/map-v3">
           <span className={topMenu == "listing" ? "title menuActive" : "title"}>
-            Listing
+            Catalog
           </span>
-          <span className="arrow"></span>
+          {/* <span className="arrow"></span> */}
         </a>
-        <ul className="row dropdown-megamenu sub-menu">
+        {/* <ul className="row dropdown-megamenu sub-menu">
           {listingItems.map((item, index) => (
             <li className="col mega_menu_list" key={index}>
               <h4 className="title">{item.title}</h4>
@@ -101,20 +101,20 @@ const MainMenu = () => {
               </ul>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </li>
       {/* End listings */}
 
       <li className="visible_list dropitem">
-        <a className="list-item" href="#">
+        <a className="list-item" href="/about">
           <span
             className={topMenu == "property" ? "title menuActive" : "title"}
           >
-            Property
+            About
           </span>
-          <span className="arrow"></span>
+          {/* <span className="arrow"></span> */}
         </a>
-        <ul className="sub-menu">
+        {/* <ul className="sub-menu">
           {propertyItems.map((item, index) => (
             <li key={index} className="dropitem">
               <a href="#">
@@ -141,18 +141,18 @@ const MainMenu = () => {
               </ul>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </li>
       {/* End property Items */}
 
       <li className="visible_list dropitem">
-        <a className="list-item" href="#">
+        <a className="list-item" href="/blog-list-v3">
           <span className={topMenu == "blog" ? "title menuActive" : "title"}>
             Blog
           </span>
-          <span className="arrow"></span>
+          {/* <span className="arrow"></span> */}
         </a>
-        <ul className="sub-menu">
+        {/* <ul className="sub-menu">
           {blogItems.map((item, index) => (
             <li key={index}>
               <Link className={`${handleActive(item.href)}`} href={item.href}>
@@ -160,18 +160,18 @@ const MainMenu = () => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </li>
       {/* End blog Items */}
 
       <li className="visible_list dropitem">
-        <a className="list-item" href="#">
-          <span className={topMenu == "pages" ? "title menuActive" : "title"}>
-            Pages
+        <a className="list-item" href="/contact">
+          <span className={topMenu == "pages" ? "title menuActive" : "title"}>            
+           Contact
           </span>
-          <span className="arrow"></span>
+          {/* <span className="arrow"></span> */}
         </a>
-        <ul className="sub-menu">
+        {/* <ul className="sub-menu">
           {pageItems.map((item, index) => (
             <li key={index}>
               <Link className={`${handleActive(item.href)}`} href={item.href}>
@@ -179,7 +179,7 @@ const MainMenu = () => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </li>
       {/* End pages Items */}
     </ul>

@@ -33,7 +33,7 @@ const PopularListings = ({data}) => {
               <div className="listing-style1">
                 <div className="list-thumb">
                   <Image
-                    width={382}
+                    width={400}
                     height={248}
                     className="w-100 h-100 cover"
                     src={listing.image}

@@ -1,4 +1,41 @@
-import { getAllPostsForHome } from "@/app/lib/api";
+import { fetchAPI } from "@/lib/api";
+
+async function getAllPostsForHome(preview) {
+  const data = await fetchAPI(
+    `
+    query AllPosts {
+      posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) {
+        edges {
+          node {
+            title
+            excerpt
+            slug
+            date
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
+            author {
+              node {
+                name
+                firstName
+                lastName
+                avatar {
+                  url
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `
+  ) 
+
+  return data
+}
+
 
 export default async function Mytest() {
     const {posts: { edges }} = await getAllPostsForHome();

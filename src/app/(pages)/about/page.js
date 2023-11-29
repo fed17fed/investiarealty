@@ -9,7 +9,7 @@ import FunFact from "@/components/pages/about/FunFact";
 import Mission from "@/components/pages/about/Mission";
 import Image from "next/image";
 import Link from "next/link";
-import { getAllPostsForHome } from "@/app/lib/api";
+// import { getAllPostsForHome } from "@/app/lib/api";
 import Mytest from "@/components/pages/about/Mytest";
 
 export const metadata = {
@@ -17,7 +17,7 @@ export const metadata = {
 };
 
 export default async function About() {
-  const {posts: { edges }} = await getAllPostsForHome();
+  // const {posts: { edges }} = await getAllPostsForHome();
   //console.log(projects)
   return (
     <>
@@ -203,14 +203,14 @@ export default async function About() {
       {/* Our CTA */}
 
       {/* Test */}
-      <section className="pt30 pb-0">
+      {/* <section className="pt30 pb-0">
       {edges.map((item, id) => (
         <div key={id}>
           <img src={item.node.featuredImage.node.sourceUrl} />
           <p>{item.node.title}<span>  {item.node.slug}</span></p>
         </div>
       ))} 
-      </section>
+      </section> */}
       {/* end Test */}
 
       {/* Mytest */}

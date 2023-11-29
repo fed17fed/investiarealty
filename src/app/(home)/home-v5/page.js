@@ -11,14 +11,17 @@ import Blog from "@/components/common/Blog";
 import Hero from "@/components/home/home-v5/Hero";
 import ApartmentTypes from "@/components/home/home-v5/ApartmentTypes";
 import Cta from "@/components/home/home-v5/Cta";
+import Faq1 from "@/components/pages/faq/Faq1";
+import Faq2 from "@/components/pages/faq/Faq2";
 import Link from "next/link";
 import PropertyListing from "@/components/home/home-v5/PropertyListing";
 
 export const metadata = {
-  title: "Home v5 || Homez - Real Estate NextJS Template",
+  title: "Investia || Investia - Real Estate Agents ltd",
 };
 
 const Home_V5 = () => {
+  
   return (
     <>
       {/* Main Header Nav */}
@@ -86,7 +89,7 @@ const Home_V5 = () => {
       {/* End Discover Our Featured Listings */}
 
       {/* Explore Apartment Types cities */}
-      <section className="pb90 pb30-md">
+      {/* <section className="pb90 pb30-md">
         <div className="container">
           <div className="row" data-aos="fade-up" data-aos-delay="0">
             <div className="col-lg-6 mx-auto">
@@ -97,15 +100,14 @@ const Home_V5 = () => {
                 </p>
               </div>
             </div>
-          </div>
-          {/* End .row */}
+          </div>          
 
           <div className="row" data-aos="fade-up" data-aos-delay="300">
             <ApartmentTypes />
           </div>
-          {/* End .row */}
+         
         </div>
-      </section>
+      </section> */}
       {/* End Explore Apartment Types cities */}
 
       {/* Explore Apartment */}
@@ -134,7 +136,7 @@ const Home_V5 = () => {
       {/* End Explore Apartment */}
 
       {/* Explore property-city */}
-      <section className="pb40-md pb90">
+      {/* <section className="pb40-md pb90">
         <div className="container">
           <div
             className="row align-items-center"
@@ -149,7 +151,6 @@ const Home_V5 = () => {
                 </p>
               </div>
             </div>
-            {/* End col-lg-9 */}
 
             <div className="col-lg-3">
               <div className="text-start text-lg-end mb-3">
@@ -159,9 +160,8 @@ const Home_V5 = () => {
                 </Link>
               </div>
             </div>
-            {/* End col-lg-3 */}
+            
           </div>
-          {/* End .row */}
 
           <div className="row">
             <div className="col-lg-12" data-aos="fade-up" data-aos-delay="300">
@@ -170,13 +170,13 @@ const Home_V5 = () => {
               </div>
             </div>
           </div>
-          {/* End .row */}
+          
         </div>
-      </section>
+      </section> */}
       {/* End Explore property-city */}
 
       {/* CTA */}
-      <Cta />
+      {/* <Cta /> */}
       {/* CTA */}
 
       {/* Our Testimonials */}
@@ -215,8 +215,35 @@ const Home_V5 = () => {
       {/* End Our Testimonials */}
 
       {/* Popular Property */}
-      <PropertyListing />
+      {/* <PropertyListing /> */}
       {/* End  Popular Property */}
+
+      {/* FAQ Section Area */}
+      <section className="our-faq pb90 pt-0">
+        <div className="container">
+          <div className="row wow fadeInUp" data-wow-delay="300ms">
+            <div className="col-lg-12">
+              <div className="ui-content">
+                <h4 className="title">Question About Selling</h4>
+                <div className="accordion-style1 faq-page mb-4 mb-lg-5">
+                  <Faq1 />
+                </div>
+              </div>
+              {/* End ui-content */}
+
+              <div className="ui-content">
+                <h4 className="title">Question About Renting</h4>
+                <div className="accordion-style1 faq-page mb-4 mb-lg-5">
+                  <Faq2 />
+                </div>
+              </div>
+              {/* End ui-content */}
+            </div>
+            {/* End .col-lg-12 */}
+          </div>
+        </div>
+      </section>
+      {/* End FAQ Section Area */}
 
       {/* Explore Blog */}
       <section className="pb90 pb30-md">
