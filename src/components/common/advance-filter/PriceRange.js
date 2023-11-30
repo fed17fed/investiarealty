@@ -1,7 +1,8 @@
 "use client";
-import React, { useState } from "react";
-import InputRange from "react-input-range";
-import "react-input-range/lib/css/index.css";
+import React, { useState } from "react"
+import InputRange from "react-input-range"
+import "react-input-range/lib/css/index.css"
+
 
 const PriceRange = () => {
   const [price, setPrice] = useState({ value: { min: 20, max: 70987 } });
