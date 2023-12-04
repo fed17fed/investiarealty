@@ -35,6 +35,15 @@ const Header = () => {
         <nav className="posr">
           <div className="container posr menu_bdrt1">
             <div className="row align-items-center justify-content-between">
+            <div className="col-auto">
+                <div className="d-flex align-items-center justify-content-between">
+                  <div className="logos_title mr40">
+                      Агенство<br/>
+                      коммерческой<br/>
+                      недвижимости
+                  </div>
+                </div>
+              </div>
               <div className="col-auto">
                 <div className="d-flex align-items-center justify-content-between">
                   <div className="logos mr40">
@@ -57,7 +66,8 @@ const Header = () => {
                   </div>
                   {/* End Logo */}
 
-                  <MainMenu />
+                  {/* Main Menu */}
+                  {/* <MainMenu /> */}
                   {/* End Main Menu */}
                 </div>
               </div>

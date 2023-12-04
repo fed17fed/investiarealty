@@ -3,7 +3,7 @@ import ScrollToTop from "@/components/common/ScrollTop";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "../../public/scss/main.scss";
-import { DM_Sans, Poppins } from "next/font/google";
+import { Montserrat, Raleway, Poppins } from "next/font/google";
 import { useEffect } from "react";
 
 if (typeof window !== "undefined") {
@@ -11,17 +11,24 @@ if (typeof window !== "undefined") {
 }
 
 // DM_Sans font
-const dmSans = DM_Sans({
+const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--body-font-family",
 });
 
+// Raleway font
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["400", "500", "700",],
+  variable: "--title-font-family",
+});
+
 // Poppins font
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--title-font-family",
+  weight: ["400", "500", "700"],
+  variable: "--more-font-family",
 });
 
 export default function RootLayout({ children }) {
@@ -35,7 +42,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`body  ${poppins.className} ${dmSans.className}`}
+        className={`body   ${montserrat.className} ${raleway.className} ${poppins.className}`}
         cz-shortcut-listen="false"
       >
         <div className="wrapper ovh">{children}</div>

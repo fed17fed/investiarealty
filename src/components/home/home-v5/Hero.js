@@ -106,7 +106,7 @@ export default function Hero() {
                         <p className="mb30 slider-text text-white">
                           {item.description}
                         </p>
-                        <div className="slider-btn-block">
+                        {/* <div className="slider-btn-block">
                           <Link
                             href="/map-v4"
                             className="ud-btn btn-gray_black slider-btn"
@@ -114,7 +114,7 @@ export default function Hero() {
                             View Details
                             <i className="fal fa-arrow-right-long" />
                           </Link>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -125,7 +125,7 @@ export default function Hero() {
         </Swiper>
       </div>
 
-      <div className="custom_thumbs">
+      {/* <div className="custom_thumbs">
         <Swiper
           direction="vertical" // Set the direction to vertical
           modules={[Thumbs]}
@@ -148,7 +148,7 @@ export default function Hero() {
           ))}
         </Swiper>
         <p>{}</p>
-      </div>
+      </div> */}
     </>
   );
 };

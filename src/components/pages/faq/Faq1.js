@@ -24,6 +24,30 @@ const Faq1 = () => {
       answer:
         "It doesn’t matter how organized you are — a surplus of toys will always ensure your house",
     },
+    {
+      id: "headingOne1",
+      question: "Can a home depreciate in value?",
+      answer:
+        "It doesn’t matter how organized you are — a surplus of toys will always ensure your house",
+    },
+    {
+      id: "headingTwo2",
+      question: "Is an older home as good a value as a new home?",
+      answer:
+        "It doesn’t matter how organized you are — a surplus of toys will always ensure your house",
+    },
+    {
+      id: "headingThree3",
+      question: "What is a broker?",
+      answer:
+        "It doesn’t matter how organized you are — a surplus of toys will always ensure your house is a mess waiting to happen. Fortunately, getting kids on board with the idea of ditching their stuff is a lot easier than it sounds. <br /><br /> The trick is to make it an opportunity for them to define themselves and their interests. Encourage kids to make a pile of ”baby toys” to donate, and have them set aside any toys that no longer interest them, such as action figures from a forgotten TV show. Separating these toys will help them appreciate how much they’ve grown and rediscover the toys they love.",
+    },
+    {
+      id: "headingFour4",
+      question: "Can I pay my own taxes and insurance?",
+      answer:
+        "It doesn’t matter how organized you are — a surplus of toys will always ensure your house",
+    },
   ];
 
   return (
@@ -45,7 +69,7 @@ const Faq1 = () => {
           <div
             id={`collapse${index + 1}`}
             className={`accordion-collapse collapse ${
-              index === 2 ? "show" : ""
+              index === 0 ? "show" : ""
             }`}
             aria-labelledby={item.id}
             data-parent="#accordionExample"

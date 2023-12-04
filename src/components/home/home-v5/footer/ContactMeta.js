@@ -4,23 +4,28 @@ const ContactMeta = () => {
   const contactInfoData = [
     {
       text: "Address",
-      info: "329 Queensberry Street, North Melbourne VIC 3051, Australia.",
+      info: "Главный офис: Василеос Павлу 28, Район Церкви Святого Лазаря Николау Россу 18, Район Центральной почты P.O.Box 40096 почтовый ящик",
       link: "#", // Empty link value for the first object
     },
     {
-      text: "Total Free Customer Care",
-      info: "+(0) 123 050 945 02",
-      link: "tel:+012305094502",
+      text: "Ларнака",
+      info: "Смотреть на карте",
+      link: "#",
     },
-    {
-      text: "Need Live Support?",
-      info: "hi@homez.com",
-      link: "mailto:hi@homez.com",
-    },
+    // {
+    //   text: "Total Free Customer Care",
+    //   info: "+(0) 123 050 945 02",
+    //   link: "tel:+012305094502",
+    // },
+    // {
+    //   text: "Need Live Support?",
+    //   info: "hi@homez.com",
+    //   link: "mailto:hi@homez.com",
+    // },
   ];
 
   return (
-    <div className="row mb-4 mb-lg-5">
+    <div className="row">
       {contactInfoData.map((contact, index) => (
         <div className="contact-info mb25" key={index}>
           <p className="info-title mb5">{contact.text}</p>

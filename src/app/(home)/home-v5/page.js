@@ -1,4 +1,6 @@
 import Explore from "@/components/common/Explore";
+import CategoriesListing from "@/components/home/home-v5/CategoriesListing";
+import ServicesListihg from "@/components/home/home-v5/ServicesListihg";
 import Footer from "@/components/home/home-v5/footer";
 import MobileMenu from "@/components/common/mobile-menu";
 import FeaturedListings from "@/components/home/home-v5/FeatuerdListings";
@@ -13,6 +15,7 @@ import ApartmentTypes from "@/components/home/home-v5/ApartmentTypes";
 import Cta from "@/components/home/home-v5/Cta";
 import Faq1 from "@/components/pages/faq/Faq1";
 import Faq2 from "@/components/pages/faq/Faq2";
+import UsefulLinks from "@/components/common/UsefulLinks";
 import Link from "next/link";
 import PropertyListing from "@/components/home/home-v5/PropertyListing";
 
@@ -41,7 +44,7 @@ const Home_V5 = () => {
       {/* Edn Hero Slide */}
 
       {/* Filter with properties */}
-      <section className="pt-0 pb110 bgc-f7 pb50-md">
+      <section className="pt-0 pb60 bgc-f7 ">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -54,22 +57,32 @@ const Home_V5 = () => {
       </section>
       {/* End Filter with properties */}
 
+      {/* CategoriesListing */}
+      <section className="pb90 pb30-md bgc-thm-light category_section">
+        <div className="container">  
+          <div className="row">
+            <CategoriesListing />
+          </div>
+        </div>
+      </section>
+      {/* End CategoriesListing */}
+
       {/* Discover Our Featured Listings */}
       <section className="pt-0 pb110 bgc-f7 pb50-md">
         <div className="container">
           <div className="row align-items-center" data-aos="fade-up">
             <div className="col-lg-9">
               <div className="main-title2">
-                <h2 className="title">Discover Our Featured Listings</h2>
-                <p className="paragraph">
+                <h2 className="title">Лучшие предложения - рекомендуем</h2>
+                {/* <p className="paragraph">
                   Aliquam lacinia diam quis lacus euismod
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="col-lg-3">
               <div className="text-start text-lg-end mb-3">
                 <Link className="ud-btn2" href="/grid-full-2-col">
-                  See All Properties
+                    Смотреть все
                   <i className="fal fa-arrow-right-long" />
                 </Link>
               </div>
@@ -111,7 +124,7 @@ const Home_V5 = () => {
       {/* End Explore Apartment Types cities */}
 
       {/* Explore Apartment */}
-      <section className="pb90 pb30-md bgc-thm-light">
+      {/* <section className="pb90 pb30-md bgc-thm-light">
         <div className="container">
           <div className="row">
             <div
@@ -126,13 +139,11 @@ const Home_V5 = () => {
               </div>
             </div>
           </div>
-          {/* End .row */}
-
           <div className="row">
             <Explore />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* End Explore Apartment */}
 
       {/* Explore property-city */}
@@ -179,6 +190,61 @@ const Home_V5 = () => {
       {/* <Cta /> */}
       {/* CTA */}
 
+      {/* ServicesListihg */}
+      <section className="pb30-md bgc-thm-light category_section">
+        <div className="container">  
+          <div className="row">
+            <div
+              className="col-lg-6 m-auto wow fadeInUp"
+              data-wow-delay="300ms"
+            >
+              <div className="main-title text-center">
+                <h2 className="title">Услуги</h2>
+                {/* <p className="paragraph">
+                  Aliquam lacinia diam quis lacus euismod
+                </p> */}
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <ServicesListihg />
+          </div>
+        </div>
+      </section>
+      {/* End ServicesListihg */}      
+
+      {/* Popular Property */}
+      {/* <PropertyListing /> */}
+      {/* End  Popular Property */}
+
+      {/* FAQ Section Area */}
+      <section className="our-faq pb-0 pt-0">
+        <div className="container">
+          <div className="row wow fadeInUp" data-wow-delay="300ms">
+            <div className="col-lg-12">
+              <div className="ui-content">
+                <h2 className="title text-center">Часто  задаваємые вопросы</h2>
+                <div className="accordion-style1 faq-page">
+                  <Faq1 />
+                </div>
+              </div>
+              {/* End ui-content */}
+
+              {/* <div className="ui-content">
+                <h4 className="title">Question About Renting</h4>
+                <div className="accordion-style1 faq-page mb-4 mb-lg-5">
+                  <Faq2 />
+                </div>
+              </div> */}
+              {/* End ui-content */}
+            </div>
+            {/* End .col-lg-12 */}
+          </div>
+        </div>
+      </section>
+      {/* End FAQ Section Area */}
+
       {/* Our Testimonials */}
       <section className="pb50-md">
         <div className="container maxw1600">
@@ -189,10 +255,10 @@ const Home_V5 = () => {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                <h2 className="title">People Love Living with Realton</h2>
-                <p className="paragraph">
+                <h2 className="title">Отзывы клиентов</h2>
+                {/* <p className="paragraph">
                   Aliquam lacinia diam quis lacus euismod
-                </p>
+                </p> */}
               </div>
             </div>
             {/* End header */}
@@ -214,39 +280,8 @@ const Home_V5 = () => {
       </section>
       {/* End Our Testimonials */}
 
-      {/* Popular Property */}
-      {/* <PropertyListing /> */}
-      {/* End  Popular Property */}
-
-      {/* FAQ Section Area */}
-      <section className="our-faq pb90 pt-0">
-        <div className="container">
-          <div className="row wow fadeInUp" data-wow-delay="300ms">
-            <div className="col-lg-12">
-              <div className="ui-content">
-                <h4 className="title">Question About Selling</h4>
-                <div className="accordion-style1 faq-page mb-4 mb-lg-5">
-                  <Faq1 />
-                </div>
-              </div>
-              {/* End ui-content */}
-
-              <div className="ui-content">
-                <h4 className="title">Question About Renting</h4>
-                <div className="accordion-style1 faq-page mb-4 mb-lg-5">
-                  <Faq2 />
-                </div>
-              </div>
-              {/* End ui-content */}
-            </div>
-            {/* End .col-lg-12 */}
-          </div>
-        </div>
-      </section>
-      {/* End FAQ Section Area */}
-
       {/* Explore Blog */}
-      <section className="pb90 pb30-md">
+      {/* <section className="pb90 pb30-md">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 m-auto" data-aos="fade-up">
@@ -258,32 +293,29 @@ const Home_V5 = () => {
               </div>
             </div>
           </div>
-          {/* End .row */}
-
           <div className="row" data-aos="fade-up" data-aos-delay="300">
             <Blog />
           </div>
-          {/* End .row */}
         </div>
-      </section>
+      </section> */}
       {/* Explore Blog */}
 
       {/* Our Partners */}
       <section className="our-partners pt0">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12" data-aos="fade-up">
+            {/* <div className="col-lg-12" data-aos="fade-up">
               <div className="main-title text-center">
                 <h6>Trusted by the world’s best</h6>
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-12 text-center">
               <div
                 className="dots_none nav_none"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                <Partner />
+                <UsefulLinks />
               </div>
             </div>
           </div>

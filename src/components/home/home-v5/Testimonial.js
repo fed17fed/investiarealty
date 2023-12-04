@@ -9,7 +9,7 @@ const Testimonial = () => {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
         modules={[Navigation, Pagination]}
         navigation={{
           nextEl: ".testimonila_next__active",
@@ -37,7 +37,7 @@ const Testimonial = () => {
         {testimonialData.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
             <div className="item">
-              <div className="testimonial-style3 mt-1 mx-1 position-relative mb60">
+              <div className="testimonial-style3 mt-1 position-relative mb60">
                 <div className="testimonial-content">
                   <span className="icon">“</span>
                 </div>

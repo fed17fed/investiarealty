@@ -10,7 +10,7 @@ const FeaturedListings = () => {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
         modules={[Navigation, Pagination]}
         navigation={{
           nextEl: ".featured-next__active",
@@ -40,10 +40,10 @@ const FeaturedListings = () => {
           <SwiperSlide key={listing.id}>
             <div className="item">
               <div className="listing-style7 mb60">
-                <div className="list-thumb">
+                <div className="list-thumb featured_listmain">
                   <Image
-                    width={382}
-                    height={248}
+                    width={400}
+                    height={260}
                     className="w-100 h-100 cover"
                     src={listing.image}
                     alt="listings"
