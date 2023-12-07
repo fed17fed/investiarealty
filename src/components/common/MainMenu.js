@@ -77,7 +77,7 @@ const MainMenu = () => {
       {/* End homeItems */}
 
       <li className="megamenu_style dropitem">
-        <a className="list-item" href="/map-v3">
+        <a className="list-item" href="/grid-default">
           <span className={topMenu == "listing" ? "title menuActive" : "title"}>
             Catalog
           </span>

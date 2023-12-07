@@ -17,7 +17,7 @@ const PropertyType = ({filterFunctions}) => {
   return (
     <>
     <label className="custom_checkbox"  >
-          All
+          Все
           <input type="checkbox"
           checked={!filterFunctions?.propertyTypes.length}
           onChange={(e=>{filterFunctions?.setPropertyTypes([])})}

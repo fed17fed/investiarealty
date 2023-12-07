@@ -151,8 +151,9 @@ html {
 .select-custom {
     width: 100%;
     .select__control {
-        border-radius: 8px;
-        border: 1px solid #dddddd;
+        color: #FFF;
+        background-color: #304861;
+        border: 1px solid #54728E;
         -webkit-box-shadow: none;
         box-shadow: none;
         min-height: 55px;
@@ -164,16 +165,19 @@ html {
 
         &.select__control--menu-is-open {
             border-color: transparent;
-            border: 2px solid #000 !important;
+            border: 2px solid #ddd !important;
         }
     }
     .select__indicator-separator {
-        background-color: #ddd;
+        background-color: #54728E;
     }
     &.pl-0 {
         .select__control {
             padding-left: 7px;
         }
+    }
+    .select__single-value {
+        color: white;
     }
 }
 .reset-button {
@@ -184,11 +188,11 @@ html {
 // input range slider
 .range-wrapper {
     .input-range__slider {
-        background-color: #ffffff;
-        background-image: url(../images/icon/range-slider-range-bg-line.svg);
+        background-color: #1A2632;
+        background-image: url(../images/icon/range-slider-range-bg-line_white.svg);
         background-repeat: no-repeat;
         background-position: center;
-        border: 2px solid var(--headings-color);
+        border: 2px solid #465F77;
         border-radius: 50%;
         height: 29px;
         left: 0;
@@ -198,10 +202,14 @@ html {
         -o-box-shadow: 0px 0px 5px 0px rgba(19, 19, 28, 0.2);
         box-shadow: 0px 0px 5px 0px rgba(19, 19, 28, 0.2);
     }
-    .input-range__track--active {
-        background-color: var(--headings-color);
-        border-radius: 30px;
+    .input-range__track {
+        background: #1A2632;
+        height: 0.2rem;
     }
+    .input-range__track--active {
+        background-color: #eee;
+        border-radius: 30px;
+    }    
     .input-range {
         margin-bottom: 25px;
     }

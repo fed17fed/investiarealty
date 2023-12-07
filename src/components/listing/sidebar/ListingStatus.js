@@ -4,9 +4,9 @@ import React from "react";
 
 const ListingStatus = ({filterFunctions}) => {
   const options = [
-    { id: "flexRadioDefault3", label: "All" , defaultChecked: true },
-    { id: "flexRadioDefault1", label: "Buy" },
-    { id: "flexRadioDefault2", label: "Rent", },
+    { id: "flexRadioDefault3", label: "Все" , defaultChecked: true },
+    { id: "flexRadioDefault1", label: "Купить" },
+    { id: "flexRadioDefault2", label: "Арендовать", },
 
   ];
 

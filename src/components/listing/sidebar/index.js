@@ -15,14 +15,14 @@ import OtherFeatures from "./OtherFeatures";
 const ListingSidebar = ({filterFunctions}) => {
   return (
     <div className="list-sidebar-style1">
-      <div className="widget-wrapper">
+      {/* <div className="widget-wrapper">
         <h6 className="list-title">Find your home</h6>
         <SearchBox filterFunctions={filterFunctions} />
-      </div>
+      </div> */}
       {/* End .widget-wrapper */}
 
       <div className="widget-wrapper">
-        <h6 className="list-title">Listing Status</h6>
+        <h6 className="list-title">Статус объявления</h6>
         <div className="radio-element">
           <ListingStatus filterFunctions={filterFunctions} />
         </div>
@@ -30,7 +30,7 @@ const ListingSidebar = ({filterFunctions}) => {
       {/* End .widget-wrapper */}
 
       <div className="widget-wrapper">
-        <h6 className="list-title">Property Type</h6>
+        <h6 className="list-title">Тип  недвижимости</h6>
         <div className="checkbox-style1">
           <PropertyType filterFunctions={filterFunctions} />
         </div>
@@ -47,20 +47,20 @@ const ListingSidebar = ({filterFunctions}) => {
       </div>
       {/* End .widget-wrapper */}
 
-      <div className="widget-wrapper">
+      {/* <div className="widget-wrapper">
         <h6 className="list-title">Bedrooms</h6>
         <div className="d-flex">
           <Bedroom filterFunctions={filterFunctions} />
         </div>
-      </div>
+      </div> */}
       {/* End .widget-wrapper */}
 
-      <div className="widget-wrapper">
+      {/* <div className="widget-wrapper">
         <h6 className="list-title">Bathrooms</h6>
         <div className="d-flex">
           <Bathroom filterFunctions={filterFunctions}  />
         </div>
-      </div>
+      </div> */}
       {/* End .widget-wrapper */}
 
       <div className="widget-wrapper advance-feature-modal">
@@ -115,7 +115,7 @@ const ListingSidebar = ({filterFunctions}) => {
       </div>
       {/* End .widget-wrapper */}
 
-      <div className="widget-wrapper mb20">
+      <div className="widget-wrapper mb20 filter_search">
         <div className="btn-area d-grid align-items-center">
           <button className="ud-btn btn-thm">
             <span className="flaticon-search align-text-top pr10" />
@@ -130,10 +130,10 @@ const ListingSidebar = ({filterFunctions}) => {
           <span className="flaticon-turn-back" />
           <u>Reset all filters</u>
         </div>
-        <a className="reset-button" href="#">
+        {/* <a className="reset-button" href="#">
           <span className="flaticon-favourite" />
           <u>Save Search</u>
-        </a>
+        </a> */}
       </div>
     </div>
   );

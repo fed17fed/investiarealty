@@ -11,7 +11,7 @@ import PaginationTwo from "../../PaginationTwo";
 export default function PropertyFiltering() {
   const [filteredData, setFilteredData] = useState([]);
 
-  const [currentSortingOption, setCurrentSortingOption] = useState("Newest");
+  const [currentSortingOption, setCurrentSortingOption] = useState("По новизне");
 
   const [sortedFilteredData, setSortedFilteredData] = useState([]);
   const [pageNumber, setPageNumber] = useState(1);
@@ -32,7 +32,7 @@ export default function PropertyFiltering() {
     ]);
   }, [pageNumber, sortedFilteredData]);
 
-  const [listingStatus, setListingStatus] = useState("All");
+  const [listingStatus, setListingStatus] = useState("Все");
   const [propertyTypes, setPropertyTypes] = useState([]);
   const [priceRange, setPriceRange] = useState([0, 100000]);
   const [bedrooms, setBedrooms] = useState(0);
@@ -44,7 +44,7 @@ export default function PropertyFiltering() {
   const [searchQuery, setSearchQuery] = useState("");
 
   const resetFilter = () => {
-    setListingStatus("All");
+    setListingStatus("Все");
     setPropertyTypes([]);
     setPriceRange([0, 100000]);
     setBedrooms(0);
@@ -60,11 +60,11 @@ export default function PropertyFiltering() {
   };
 
   const handlelistingStatus = (elm) => {
-    setListingStatus((pre) => (pre == elm ? "All" : elm));
+    setListingStatus((pre) => (pre == elm ? "Все" : elm));
   };
 
   const handlepropertyTypes = (elm) => {
-    if (elm == "All") {
+    if (elm == "Все") {
       setPropertyTypes([]);
     } else {
       setPropertyTypes((pre) =>
@@ -92,7 +92,7 @@ export default function PropertyFiltering() {
     setyearBuild(elm);
   };
   const handlecategories = (elm) => {
-    if (elm == "All") {
+    if (elm == "Все") {
       setCategories([]);
     } else {
       setCategories((pre) =>
@@ -127,11 +127,11 @@ export default function PropertyFiltering() {
 
   useEffect(() => {
     const refItems = listings.filter((elm) => {
-      if (listingStatus == "All") {
+      if (listingStatus == "Все") {
         return true;
-      } else if (listingStatus == "Buy") {
+      } else if (listingStatus == "Купить") {
         return !elm.forRent;
-      } else if (listingStatus == "Rent") {
+      } else if (listingStatus == "Арендовать") {
         return elm.forRent;
       }
     });

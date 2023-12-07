@@ -7,7 +7,7 @@ const FeaturedListings = ({data,colstyle}) => {
   return (
     <>
       {data.map((listing) => (
-        <div className={` ${colstyle ? 'col-sm-12':'col-sm-6 col-lg-6'}  `} key={listing.id}>
+        <div className={` ${colstyle ? 'col-sm-12 cat_list_block':'col-sm-6 col-lg-6 cat_list_block'}`} key={listing.id}>
           <div className={colstyle ? "listing-style1 listCustom listing-type" : "listing-style1"}    >
             <div className="list-thumb" >
               <Image
@@ -22,13 +22,13 @@ const FeaturedListings = ({data,colstyle}) => {
                 {!listing.forRent && (
                   <div className="list-tag fz12">
                     <span className="flaticon-electricity me-2" />
-                    FEATURED
+                    Рекомендуем
                   </div>
                 )}
               </div>
 
               <div className="list-price">
-                {listing.price} / <span>mo</span>
+                {listing.price} / <span>мес</span>
               </div>
             </div>
             <div className="list-content">
@@ -49,14 +49,14 @@ const FeaturedListings = ({data,colstyle}) => {
               </div>
               <hr className="mt-2 mb-2" />
               <div className="list-meta2 d-flex justify-content-between align-items-center">
-                <span className="for-what">For Rent</span>
+                <span className="for-what">Аренда</span>
                 <div className="icons d-flex align-items-center">
-                  <a href="#">
+                  {/* <a href="#">
                     <span className="flaticon-fullscreen" />
                   </a>
                   <a href="#">
                     <span className="flaticon-new-tab" />
-                  </a>
+                  </a> */}
                   <a href="#">
                     <span className="flaticon-like" />
                   </a>

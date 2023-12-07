@@ -41,7 +41,7 @@ const SingleV3 = ({params}) => {
       {/* End Mobile Nav  */}
 
       {/* Property All Single V1 */}
-      <section className="pt60 pb90 bgc-white">
+      <section className="pt60 pb90">
         <div className="container">
           <div className="row">
             <PropertyHeader id={params.id} />
@@ -55,7 +55,7 @@ const SingleV3 = ({params}) => {
 
           <div className="row wrap">
             <div className="col-lg-8">
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">Overview</h4>
                 <div className="row">
                   <OverView id={params.id}  />
@@ -63,7 +63,7 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">Property Description</h4>
                 <ProperytyDescriptions />
                 {/* End property description */}
@@ -75,7 +75,7 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30 mt30">Address</h4>
                 <div className="row">
                   <PropertyAddress />
@@ -83,7 +83,7 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">Features &amp; Amenities</h4>
                 <div className="row">
                   <PropertyFeaturesAminites />
@@ -91,7 +91,7 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">Energy Class</h4>
                 <div className="row">
                   <EnergyClass />
@@ -99,7 +99,7 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">Floor Plans</h4>
                 <div className="row">
                   <div className="col-md-12">
@@ -111,7 +111,7 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 ">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 ">
                 <h4 className="title fz17 mb30">Video</h4>
                 <div className="row">
                   <PropertyVideo />
@@ -119,7 +119,7 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">360° Virtual Tour</h4>
                 <div className="row">
                   <VirtualTour360 />
@@ -127,7 +127,7 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">What&apos;s Nearby?</h4>
                 <div className="row">
                   <PropertyNearby />
@@ -135,7 +135,7 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">Walkscore</h4>
                 <div className="row">
                   <div className="col-md-12">
@@ -148,7 +148,7 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">Mortgage Calculator</h4>
                 <div className="row">
                   <MortgageCalculator />
@@ -156,14 +156,14 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <div className="row">
                   <PropertyViews />
                 </div>
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">Home Value</h4>
                 <div className="row">
                   <HomeValueChart />
@@ -171,13 +171,13 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">Get More Information</h4>
                 <InfoWithForm />
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <div className="row">
                   {/* <AllComments /> */}
                   <AllReviews />
@@ -185,7 +185,7 @@ const SingleV3 = ({params}) => {
               </div>
               {/* End .ps-widget */}
 
-              <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
+              <div className="ps-widget bgc-blue bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">Leave A Review</h4>
                 <div className="row">
                   <ReviewBoxForm />
@@ -197,14 +197,14 @@ const SingleV3 = ({params}) => {
 
             <div className="col-lg-4">
               <div className="column">
-                <div className="default-box-shadow1 bdrs12 bdr1 p30 mb30-md bgc-white position-relative">
+                <div className="default-box-shadow1 bdrs12 bdr1 p30 mb30-md bgc-blue position-relative">
                   <h4 className="form-title mb5">Schedule a tour</h4>
                   <p className="text">Choose your preferred day</p>
                   <ScheduleTour />
                 </div>
                 {/* End .Schedule a tour */}
 
-                <div className="agen-personal-info position-relative bgc-white default-box-shadow1 bdrs12 p30 mt30">
+                <div className="agen-personal-info position-relative bgc-blue default-box-shadow1 bdrs12 p30 mt30">
                   <div className="widget-wrapper mb-0">
                     <h6 className="title fz17 mb30">Get More Information</h6>
                     <ContactWithAgent />

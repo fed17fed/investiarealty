@@ -1,5 +1,5 @@
-import DefaultHeader from "@/components/common/DefaultHeader";
-import Footer from "@/components/common/default-footer";
+import Header from "@/components/home/home-v5/Header";
+import Footer from "@/components/home/home-v5/footer/index";
 import MobileMenu from "@/components/common/mobile-menu";
 
 import React from "react";
@@ -13,7 +13,7 @@ const GridDefault = () => {
   return (
     <>
       {/* Main Header Nav */}
-      <DefaultHeader />
+      <Header />
       {/* End Main Header Nav */}
 
       {/* Mobile Nav  */}
@@ -26,10 +26,10 @@ const GridDefault = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="breadcumb-style1">
-                <h2 className="title">New York Homes for Sale</h2>
+                <h2 className="title">Офис/Офисное здание</h2>
                 <div className="breadcumb-list">
-                  <a href="#">Home</a>
-                  <a href="#">For Rent</a>
+                  <a href="#"><i class="fa-solid fa-house"></i></a>
+                  <a href="#">Аренда</a>
                 </div>
                 <a
                   className="filter-btn-left mobile-filter-btn d-block d-lg-none"
