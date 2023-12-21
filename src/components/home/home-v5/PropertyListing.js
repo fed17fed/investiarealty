@@ -2,25 +2,25 @@
 'use client'
 import listings from "@/data/listings";
 import Link from 'next/link';
-
 import React, { useEffect, useState } from 'react'
 import PopularListings from './PopularListings';
 
 export default function PropertyListing() {
+
     const [pageData, setPageData] = useState([])
     const [currentType, setCurrentType] = useState('rent')
     useEffect(() => {
         if (currentType == 'rent') {
             const filtered = listings.filter((elm)=>elm.forRent)
-            setPageData(filtered)
+            setPageData(filtered)            
             
         } else {
             const filtered = listings.filter((elm)=> !elm.forRent)
             setPageData(filtered)
-            
         }
       
     }, [currentType])
+
   return (
     <section className="bgc-thm pb90 pb40-md">
     <div className="container">

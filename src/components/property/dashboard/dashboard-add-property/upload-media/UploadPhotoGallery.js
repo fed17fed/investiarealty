@@ -44,7 +44,7 @@ const UploadPhotoGallery = () => {
   return (
     <>
       <div
-        className="upload-img position-relative overflow-hidden bdrs12 text-center mb30 px-2"
+        className="upload-img position-relative overflow-hidden text-center mb30 px-2"
         onDrop={handleDrop}
         onDragOver={handleDragOver}
       >
@@ -55,14 +55,14 @@ const UploadPhotoGallery = () => {
         <p className="text mb25">
           Photos must be JPEG or PNG format and at least 2048x768
         </p>
-        <label className="ud-btn btn-white">
-          Browse Files
+        <label className="ud-btn btn_photo">
+          Загрузить файлы
           <input
             ref={fileInputRef}
             id="fileInput"
             type="file"
             multiple
-            className="ud-btn btn-white"
+            className="ud-btn btn_photo"
             onChange={(e) => handleUpload(e.target.files)}
             style={{ display: "none" }}
           />

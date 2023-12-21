@@ -44,11 +44,13 @@ const PropertyDescription = () => {
       <div className="row">
         <div className="col-sm-12">
           <div className="mb20">
-            <label className="heading-color ff-heading fw600 mb10">Title</label>
+            <label className="heading-color ff-heading fw600 mb10">
+              Название
+            </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Your Name"
+              placeholder="Ваше название"
             />
           </div>
         </div>
@@ -57,12 +59,12 @@ const PropertyDescription = () => {
         <div className="col-sm-12">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
-              Description
+              Описание
             </label>
             <textarea
               cols={30}
               rows={5}
-              placeholder="There are many variations of passages."
+              placeholder="Опишите вашу недвижимость"
               defaultValue={""}
             />
           </div>
@@ -72,7 +74,7 @@ const PropertyDescription = () => {
         <div className="col-sm-6 col-xl-4">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
-              Select Category
+              Выберите тип недвижимости
             </label>
             <div className="location-area">
               <Select
@@ -90,7 +92,7 @@ const PropertyDescription = () => {
         </div>
         {/* End .col-6 */}
 
-        <div className="col-sm-6 col-xl-4">
+        {/* <div className="col-sm-6 col-xl-4">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
               Listed in
@@ -108,10 +110,10 @@ const PropertyDescription = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         {/* End .col-6 */}
 
-        <div className="col-sm-6 col-xl-4">
+        {/* <div className="col-sm-6 col-xl-4">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
               Property Status
@@ -129,24 +131,24 @@ const PropertyDescription = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         {/* End .col-6 */}
 
         <div className="col-sm-6 col-xl-4">
           <div className="mb30">
             <label className="heading-color ff-heading fw600 mb10">
-              Price in $
+              Цена, € 
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Your Name"
+              placeholder="0"
             />
           </div>
         </div>
         {/* End .col-6 */}
 
-        <div className="col-sm-6 col-xl-4">
+        {/* <div className="col-sm-6 col-xl-4">
           <div className="mb30">
             <label className="heading-color ff-heading fw600 mb10">
               Yearly Tax Rate
@@ -157,10 +159,10 @@ const PropertyDescription = () => {
               placeholder="Your Name"
             />
           </div>
-        </div>
+        </div> */}
         {/* End .col-6 */}
 
-        <div className="col-sm-6 col-xl-4">
+        {/* <div className="col-sm-6 col-xl-4">
           <div className="mb30">
             <label className="heading-color ff-heading fw600 mb10">
               After Price Label
@@ -171,7 +173,7 @@ const PropertyDescription = () => {
               placeholder="Your Name"
             />
           </div>
-        </div>
+        </div> */}
         {/* End .col-6 */}
       </div>
     </form>

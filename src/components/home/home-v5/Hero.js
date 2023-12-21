@@ -1,49 +1,21 @@
 "use client";
+import HeroData from "@/dataApi/HeroData";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Thumbs } from "swiper";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
 import Link from "next/link";
-import useSWR from "swr";
-import { request } from "graphql-request";
 
-const API_URL = process.env.NEXT_PUBLIC_MY_WORDPRESS_API_URL
-
-const fetcher = query => request(API_URL, query)
 
 export default function Hero() {
   
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  
-  const { data, error, isLoading } = useSWR(
-    `query Hero {
-      pages(where: {title: "Home"}) {
-        edges {
-          node {
-            hero {
-              slideritems {
-                image {
-                  guid
-                }
-                price
-                title
-                description
-              }
-            }
-          }
-        }
-      }
-    }`,
-    fetcher
-  )
+   
+  const { slideritems } = HeroData();
 
-  if (error) return <div>failed to load</div>
-  if (isLoading) return <div className="loading_center">loading...</div>
-
-  const {pages:{edges:[{node:{hero:{slideritems}}}]}} = data
-  
-  // const sliderItems = [
+  //console.log('Mydata = ', slideritems)
+  // const slideritems = [
   //   {
   //     image: "/images/home/home-5-1.jpg",
   //     price: "$986,00",
@@ -86,7 +58,7 @@ export default function Hero() {
           }}
           style={{ height: "850px" }}
         >
-          { slideritems.map((item, index) => (
+          { slideritems?.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="item">
                 <div

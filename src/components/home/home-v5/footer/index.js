@@ -19,7 +19,7 @@ const Footer = () => {
         {/* End .row */}
 
         <div className="row">
-          <div className="col-sm-6 col-lg-5">
+          <div className="col-sm-6 col-lg-6">
             <div className="footer-widget">
               {/* <Link className="footer-logo" href="/">
                 <Image

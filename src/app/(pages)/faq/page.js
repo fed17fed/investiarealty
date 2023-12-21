@@ -9,7 +9,7 @@ export const metadata = {
   title: "Faq  || Homez - Real Estate NextJS Template",
 };
 
-const Faq = () => {
+const Fetchdata = () => {
   return (
     <>
       {/* Main Header Nav */}
@@ -28,7 +28,7 @@ const Faq = () => {
               <div className="breadcumb-style1">
                 <h2 className="title">Frequently Asked Questions</h2>
                 <div className="breadcumb-list">
-                  <a href="#">Home</a>
+                  <a href="/">Home</a>
                   <a href="#">For Rent</a>
                 </div>
               </div>
@@ -78,4 +78,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default Fetchdata;

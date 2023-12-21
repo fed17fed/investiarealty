@@ -1,6 +1,8 @@
 import CallToActions from "@/components/common/CallToActions";
-import DefaultHeader from "@/components/common/DefaultHeader";
-import Footer from "@/components/common/default-footer";
+// import DefaultHeader from "@/components/common/DefaultHeader";
+import Header from "@/components/home/home-v5/Header";
+// import Footer from "@/components/common/default-footer";
+import Footer from "@/components/home/home-v5/footer";
 import MobileMenu from "@/components/common/mobile-menu";
 import Form from "@/components/pages/contact/Form";
 import Office from "@/components/pages/contact/Office";
@@ -13,7 +15,7 @@ const Contact = () => {
   return (
     <>
       {/* Main Header Nav */}
-      <DefaultHeader />
+      <Header />
       {/* End Main Header Nav */}
 
       {/* Mobile Nav  */}
@@ -21,7 +23,7 @@ const Contact = () => {
       {/* End Mobile Nav  */}
 
       {/* Our Contact With Map */}
-      <section className="p-0">
+      <section className="p-0 mt100">
         <iframe
           className="home8-map contact-page"
           loading="lazy"

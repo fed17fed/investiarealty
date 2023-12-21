@@ -6,15 +6,20 @@ const DetailsFiled = () => {
   return (
     <form className="form-style1">
       <div className="row">
+        <div className="col-sm-6 col-xl-4">          
+            <StructureType />
+        </div>
+        {/* End .col-4 */}
+
         <div className="col-sm-6 col-xl-4">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
-              Size in ft (only numbers)
+              Количество спален
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Your Name"
+              placeholder="0"
             />
           </div>
         </div>
@@ -23,24 +28,12 @@ const DetailsFiled = () => {
         <div className="col-sm-6 col-xl-4">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
-              Lot size in ft (only numbers)
+              Количество ванних комнат
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Your Name"
-            />
-          </div>
-        </div>
-        {/* End .col-4 */}
-
-        <div className="col-sm-6 col-xl-4">
-          <div className="mb20">
-            <label className="heading-color ff-heading fw600 mb10">Rooms</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Your Name"
+              placeholder="0"
             />
           </div>
         </div>
@@ -49,12 +42,12 @@ const DetailsFiled = () => {
         <div className="col-sm-6 col-xl-4">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
-              Bedrooms
+              Состояние
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Your Name"
+              placeholder="0"
             />
           </div>
         </div>
@@ -63,12 +56,12 @@ const DetailsFiled = () => {
         <div className="col-sm-6 col-xl-4">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
-              Bathrooms
+              Год постройки
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Your Name"
+              placeholder="0"
             />
           </div>
         </div>
@@ -77,12 +70,12 @@ const DetailsFiled = () => {
         <div className="col-sm-6 col-xl-4">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
-              Custom ID (text)
+              Площадь объекта, м²
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Your Name"
+              placeholder="0"
             />
           </div>
         </div>
@@ -91,42 +84,20 @@ const DetailsFiled = () => {
         <div className="col-sm-6 col-xl-4">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
-              Garages
+              Площадь участка, м²
             </label>
             <input
               type="text"
               className="form-control"
-              placeholder="Your Name"
+              placeholder="0"
             />
           </div>
         </div>
         {/* End .col-4 */}
 
-        <div className="col-sm-6 col-xl-4">
-          <div className="mb20">
-            <label className="heading-color ff-heading fw600 mb10">
-              Garage size
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Your Name"
-            />
-          </div>
-        </div>
-        {/* End .col-4 */}
+        
 
-        <div className="col-sm-6 col-xl-4">
-          <div className="mb20">
-            <label className="heading-color ff-heading fw600 mb10">
-              Year built (numeric)
-            </label>
-            <input type="text" className="form-control" />
-          </div>
-        </div>
-        {/* End .col-4 */}
-
-        <div className="col-sm-6 col-xl-4">
+        {/* <div className="col-sm-6 col-xl-4">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
               Available from (date)
@@ -138,8 +109,7 @@ const DetailsFiled = () => {
             />
           </div>
         </div>
-        {/* End .col-4 */}
-
+       
         <div className="col-sm-6 col-xl-4">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
@@ -152,7 +122,7 @@ const DetailsFiled = () => {
             />
           </div>
         </div>
-        {/* End .col-4 */}
+        
 
         <div className="col-sm-6 col-xl-4">
           <div className="mb20">
@@ -166,7 +136,7 @@ const DetailsFiled = () => {
             />
           </div>
         </div>
-        {/* End .col-4 */}
+        
 
         <div className="col-sm-6 col-xl-4">
           <div className="mb20">
@@ -180,7 +150,7 @@ const DetailsFiled = () => {
             />
           </div>
         </div>
-        {/* End .col-4 */}
+        
 
         <div className="col-sm-6 col-xl-4">
           <div className="mb20">
@@ -193,14 +163,59 @@ const DetailsFiled = () => {
               placeholder="Your Name"
             />
           </div>
-        </div>
-        {/* End .col-4 */}
+        </div> */}
 
-        <StructureType />
+        <div className="row">
+          <div className="mt20">
+            <h4 class="title fz17 mb20">Ваши контакты</h4>
+          </div> 
+        </div>   
+
+        <div className="row">
+          <div className="col-sm-6 col-xl-4">
+            <div className="mb20">
+              <label className="heading-color ff-heading fw600 mb10">
+                Имя
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder=""
+              />
+            </div>
+          </div>
+          {/* End .col-4 */}
+
+          <div className="col-sm-6 col-xl-4">
+            <div className="mb20">
+              <label className="heading-color ff-heading fw600 mb10">
+                Телефон
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder=""
+              />
+            </div>
+          </div>
+          {/* End .col-4 */}
+
+          <div className="col-sm-6 col-xl-4">
+            <div className="mb20">
+              <label className="heading-color ff-heading fw600 mb10">
+                Эл. почта
+              </label>
+              <input type="text" className="form-control" />
+            </div>
+          </div>
+          {/* End .col-4 */}
+        </div>
+
+        
       </div>
       {/* End .row */}
 
-      <div className="row">
+      {/* <div className="row">
         <MultiSelectField />
 
         <div className="col-sm-12">
@@ -215,9 +230,8 @@ const DetailsFiled = () => {
               defaultValue={""}
             />
           </div>
-        </div>
-        {/* End .col-12 */}
-      </div>
+        </div>        
+      </div> */}
     </form>
   );
 };

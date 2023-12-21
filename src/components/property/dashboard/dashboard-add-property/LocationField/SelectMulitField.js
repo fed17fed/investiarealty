@@ -14,17 +14,6 @@ const options = {
     "UK",
     "USA",
   ],
-  cities: [
-    "California",
-    "Chicago",
-    "Los Angeles",
-    "Manhattan",
-    "New Jersey",
-    "New York",
-    "San Diego",
-    "San Francisco",
-    "Texas",
-  ],
   additionalCountries: [
     "Belgium",
     "France",
@@ -35,6 +24,17 @@ const options = {
     "Turkey",
     "UK",
     "USA",
+  ],  
+  cities: [
+    "California",
+    "Chicago",
+    "Los Angeles",
+    "Manhattan",
+    "New Jersey",
+    "New York",
+    "San Diego",
+    "San Francisco",
+    "Texas",
   ],
 };
 
@@ -54,7 +54,7 @@ const customStyles = {
 };
 
 const SelectMultiField = () => {
-  const fieldTitles = ["Country / State", "City", "Country"];
+  const fieldTitles = ["Страна", "Регион", "Город"];
   return (
     <>
       {Object.keys(options).map((key, index) => (

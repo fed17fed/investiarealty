@@ -23,11 +23,10 @@ const customStyles = {
 };
 
 const StructureType = () => {
-  return (
-    <div className="col-sm-6 col-xl-4">
+  return (    
       <div className="mb20">
         <label className="heading-color ff-heading fw600 mb10">
-          Structure type
+          Тип
         </label>
         <div className="location-area">
           <Select
@@ -41,8 +40,7 @@ const StructureType = () => {
             options={structureTypeOptions}
           />
         </div>
-      </div>
-    </div>
+      </div>    
   );
 };
 

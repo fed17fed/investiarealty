@@ -1,14 +1,70 @@
 "use client";
-
 import listings from "@/data/listings";
 import React, { useState, useEffect } from "react";
 import ListingSidebar from "../../sidebar";
 import TopFilterBar from "./TopFilterBar";
 import FeaturedListings from "./FeatuerdListings";
-
 import PaginationTwo from "../../PaginationTwo";
+import Objects from "@/dataApi/Objects";
+
+
 
 export default function PropertyFiltering() {
+
+// const API_URL = process.env.NEXT_PUBLIC_MY_WORDPRESS_API_URL
+// const fetcher = query => request(API_URL, query)
+// const { data, error, isLoading } = useSWR(
+//   `query Objects {
+//       realtyObjects {
+//         edges {
+//           node {
+//             Real_estate_object {
+//               forrent
+//               price
+//               sqft
+//               city
+//               location
+//               gallery {
+//                 image {
+//                   link
+//                 }
+//               }
+//               propertytype
+//               yearbuilding
+//               lat
+//               long
+//               bed
+//               bath
+//               featured
+//               features {
+//                 airconditioning
+//                 dryer
+//                 fieldGroupName
+//                 frontyard
+//                 lakeview
+//                 lawn
+//                 outdoorshower
+//                 refrigerator
+//                 tvcable
+//                 washer
+//                 winecellar
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }`,
+//   fetcher
+// )
+
+// if (error) return <div>failed to load</div>
+// if (isLoading) return <div className="loading_center">loading...</div>
+
+const { user } = Objects();
+  // const {realtyObjects:{edges}} = user;
+  //console.log('Myuser = ', user);
+  console.log('Mylistings = ', listings);
+
   const [filteredData, setFilteredData] = useState([]);
 
   const [currentSortingOption, setCurrentSortingOption] = useState("По новизне");
@@ -125,7 +181,15 @@ export default function PropertyFiltering() {
     setSearchQuery,
   };
 
+
+  
+  
+  // const {data, error} = Objects;
+  // console.log(data);
+
+
   useEffect(() => {
+    console.log('Myuser7777 = ', user);
     const refItems = listings.filter((elm) => {
       if (listingStatus == "Все") {
         return true;

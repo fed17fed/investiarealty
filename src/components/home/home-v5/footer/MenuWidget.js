@@ -14,6 +14,8 @@ const MenuWidget = () => {
       title: "Quick Links",
       links: [
         { label: "Политика конфиденциальности", href: "" },
+        { label: "Контакты", href: "/contact" },
+        { label: "Каталог", href: "/grid-default" },
         // { label: "Privacy Policy", href: "#" },
         // { label: "Pricing Plans", href: "#" },
         // { label: "Our Services", href: "#" },
@@ -29,12 +31,12 @@ const MenuWidget = () => {
       {" "}
       {menuSections.map((section, index) => (
         <div className="col-sm-6 col-lg-3" key={index}>
-          <div className="footer-widget ps-0 ps-lg-5">
+          <div className="footer-widget ps-0">
             <div className="link-style1 mb-3">
               {/* <h6 className="text-white mb25">{section.title}</h6> */}
               <ul className="ps-0">
                 {section.links.map((link, linkIndex) => (
-                  <li key={linkIndex}>
+                  <li className="mb10" key={linkIndex}>
                     <a href={link.href}>{link.label}</a>
                   </li>
                 ))}

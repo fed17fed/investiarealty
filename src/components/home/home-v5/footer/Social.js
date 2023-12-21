@@ -3,18 +3,18 @@ import Image from "next/image";
 
 const Social = () => {
   const socialIcons = [
-    "/images/socicons/youtube.svg",
-    "/images/socicons/facebook.svg",
-    "/images/socicons/google.svg",
-    "/images/socicons/instagram.svg",
+    { label: "/images/socicons/youtube.svg", href: "" },
+    { label: "/images/socicons/facebook.svg", href: "" },
+    { label: "/images/socicons/google.svg", href: "" },
+    { label: "/images/socicons/instagram.svg", href: "" },
   ];
 
   return (
     <div className="social-style1 d-flex align-items-center justify-content-end">
-      <h6 className="text-white mb-0">Foolow Us</h6>
+      <h6 className="text-white mb-0 mr10">Подписывайтесь</h6>
       {socialIcons.map((iconClass, index) => (
-        <a className="pl10" key={index} href="#">
-          <Image width={20} height={20} src={iconClass} alt="icon" />
+        <a className="pl10" key={index} href={iconClass.href}>
+          <Image width={20} height={20} src={iconClass.label} alt="icon" />
           {/* <i className={iconClass + " list-inline-item"} /> */}
         </a>
       ))}

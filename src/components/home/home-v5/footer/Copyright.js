@@ -7,7 +7,7 @@ const getCurrentYear = () => {
 
 const Footer = () => {
   return (
-    <div className="container white-bdrt1 py-4">
+    <div className="container white-bdrt1 py-2">
       <div className="row">
         <div className="col-sm-7">
           <div className="text-center text-lg-start">

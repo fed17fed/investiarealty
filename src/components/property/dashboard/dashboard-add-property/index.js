@@ -20,7 +20,7 @@ const AddPropertyTabContent = () => {
             aria-controls="nav-item1"
             aria-selected="true"
           >
-            1. Description
+            1. Описание
           </button>
           <button
             className="nav-link fw600"
@@ -32,7 +32,7 @@ const AddPropertyTabContent = () => {
             aria-controls="nav-item2"
             aria-selected="false"
           >
-            2. Media
+            2. Фото
           </button>
           <button
             className="nav-link fw600"
@@ -44,7 +44,7 @@ const AddPropertyTabContent = () => {
             aria-controls="nav-item3"
             aria-selected="false"
           >
-            3. Location
+            3. Местоположение
           </button>
           <button
             className="nav-link fw600"
@@ -56,7 +56,7 @@ const AddPropertyTabContent = () => {
             aria-controls="nav-item4"
             aria-selected="false"
           >
-            4. Detail
+            4. Детали
           </button>
           <button
             className="nav-link fw600"
@@ -68,7 +68,7 @@ const AddPropertyTabContent = () => {
             aria-controls="nav-item5"
             aria-selected="false"
           >
-            5. Amenities
+            5. Удобства
           </button>
         </div>
       </nav>
@@ -81,8 +81,8 @@ const AddPropertyTabContent = () => {
           role="tabpanel"
           aria-labelledby="nav-item1-tab"
         >
-          <div className="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
-            <h4 className="title fz17 mb30">Property Description</h4>
+          <div className="ps-widget p30 position-relative">
+            <h4 className="title fz17 mb30">Описание недвижимости</h4>
             <PropertyDescription />
           </div>
         </div>
@@ -104,8 +104,8 @@ const AddPropertyTabContent = () => {
           role="tabpanel"
           aria-labelledby="nav-item3-tab"
         >
-          <div className="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
-            <h4 className="title fz17 mb30">Listing Location</h4>
+          <div className="ps-widget p30 overflow-hidden position-relative">
+            <h4 className="title fz17 mb30">Местоположение</h4>
             <LocationField />
           </div>
         </div>
@@ -117,8 +117,8 @@ const AddPropertyTabContent = () => {
           role="tabpanel"
           aria-labelledby="nav-item4-tab"
         >
-          <div className="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
-            <h4 className="title fz17 mb30">Listing Details</h4>
+          <div className="ps-widget p30 overflow-hidden position-relative">
+            <h4 className="title fz17 mb30">Детали объявления</h4>
             <DetailsFiled />
           </div>
         </div>
@@ -130,8 +130,8 @@ const AddPropertyTabContent = () => {
           role="tabpanel"
           aria-labelledby="nav-item5-tab"
         >
-          <div className="ps-widget bgc-white bdrs12 p30 overflow-hidden position-relative">
-            <h4 className="title fz17 mb30">Select Amenities</h4>
+          <div className="ps-widget p30 overflow-hidden position-relative">
+            <h4 className="title fz17 mb30">Выберите удобства</h4>
             <div className="row">
               <Amenities />
             </div>

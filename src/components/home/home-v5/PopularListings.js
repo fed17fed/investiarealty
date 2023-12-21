@@ -7,6 +7,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 
 const PopularListings = ({data}) => {
+  
+console.log(data)
   return (
     <>
       <Swiper

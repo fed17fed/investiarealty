@@ -11,12 +11,13 @@ const FeaturedListings = ({data,colstyle}) => {
           <div className={colstyle ? "listing-style1 listCustom listing-type" : "listing-style1"}    >
             <div className="list-thumb" >
               <Image
+                priority={false}
                 width={382}
                 height={248}
                 style={{height:'230px'}}
                 className="w-100  cover"
                 src={listing.image}
-                alt="listings"
+                alt="listings"                
               />
               <div className="sale-sticker-wrap">
                 {!listing.forRent && (
@@ -49,7 +50,8 @@ const FeaturedListings = ({data,colstyle}) => {
               </div>
               <hr className="mt-2 mb-2" />
               <div className="list-meta2 d-flex justify-content-between align-items-center">
-                <span className="for-what">Аренда</span>
+                <span className="for-what">{!listing.forRent? "Купить" : "Арендовать"}</span>
+                {/* <span className="for-what">Аренда</span> */}
                 <div className="icons d-flex align-items-center">
                   {/* <a href="#">
                     <span className="flaticon-fullscreen" />

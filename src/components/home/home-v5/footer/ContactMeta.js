@@ -3,14 +3,14 @@ import React from "react";
 const ContactMeta = () => {
   const contactInfoData = [
     {
-      text: "Address",
+      text: "Адрес:",
       info: "Главный офис: Василеос Павлу 28, Район Церкви Святого Лазаря Николау Россу 18, Район Центральной почты P.O.Box 40096 почтовый ящик",
       link: "#", // Empty link value for the first object
     },
     {
       text: "Ларнака",
       info: "Смотреть на карте",
-      link: "#",
+      link: "contact",
     },
     // {
     //   text: "Total Free Customer Care",
@@ -27,7 +27,7 @@ const ContactMeta = () => {
   return (
     <div className="row">
       {contactInfoData.map((contact, index) => (
-        <div className="contact-info mb25" key={index}>
+        <div className="contact-info mb25 d-flex" key={index}>
           <p className="info-title mb5">{contact.text}</p>
           {contact.link.startsWith("mailto:") ? (
             <h6 className="info-mail">

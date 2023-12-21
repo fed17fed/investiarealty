@@ -1,13 +1,14 @@
 "use client";
-
 import MainMenu from "@/components/common/MainMenu";
 import SidebarPanel from "@/components/common/sidebar-panel";
 import LoginSignupModal from "@/components/common/login-signup-modal";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from "react";
 
 const Header = () => {
+  const pathname = usePathname()
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
@@ -74,8 +75,27 @@ const Header = () => {
               {/* End .col-auto */}
 
               <div className="col-auto">
-                <div className="d-flex align-items-center">
+                <div className="d-flex">
                   <a
+                        href="tel:+35724634829"
+                        className="tel_info align-items-center"
+                        role="button"
+                  >
+                    +357 24 634829
+                  </a>
+                  <a
+                        href="tel:+35724634830"
+                        className="tel_info align-items-center"
+                        role="button"
+                  >
+                    +357 24 634830
+                  </a>
+                </div>
+              </div>
+
+              <div className="col-auto">
+                <div className="d-flex align-items-center">
+                  {/* <a
                     href="#"
                     className="login-info d-flex align-items-center"
                     data-bs-toggle="modal"
@@ -84,14 +104,19 @@ const Header = () => {
                   >
                     <i className="far fa-user-circle fz16 me-2" />{" "}
                     <span className="d-none d-xl-block">Login / Register</span>
-                  </a>
-                  {/* <Link
+                  </a> */}
+                  { pathname == "/dashboard-add-property" ? (
+                    <div className="hiden"></div>
+                  ) : (                  
+                  <Link
                     className="ud-btn btn-thm add-property bdrs12 mx-2 mx-xl-4 border-0"
                     href="/dashboard-add-property"
                   >
-                    Add Property
+                    Добавить недвижимость
                     <i className="fal fa-arrow-right-long" />
-                  </Link> */}
+                  </Link>
+                   )}
+
                   <a
                     className="sidemenu-btn filter-btn-right"
                     href="#"
@@ -115,6 +140,7 @@ const Header = () => {
                       alt="humberger menu"
                     />
                   </a>
+
                 </div>
               </div>
               {/* End .col-auto */}
