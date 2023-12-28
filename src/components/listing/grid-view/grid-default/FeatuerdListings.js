@@ -10,6 +10,7 @@ const FeaturedListings = ({data,colstyle}) => {
         <div className={` ${colstyle ? 'col-sm-12 cat_list_block':'col-sm-6 col-lg-6 cat_list_block'}`} key={list.vendorCode}>
           <div className={colstyle ? "listing-style1 listCustom listing-type" : "listing-style1"}    >
             <div className="list-thumb" >
+            <Link  href={`/single-v1/${list.vendorCode}`}>
               <Image
                 priority={false}
                 width={382}
@@ -19,6 +20,7 @@ const FeaturedListings = ({data,colstyle}) => {
                 src={list.image}
                 alt="listings"                
               />
+            </Link>
               <div className="sale-sticker-wrap">
                 {!list.forRent && (
                   <div className="list-tag fz12">
