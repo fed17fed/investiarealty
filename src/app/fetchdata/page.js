@@ -9,8 +9,8 @@ import fs from 'fs';
 import path from 'path';
 
 const API_URL = process.env.NEXT_PUBLIC_MY_WORDPRESS_API_URL
-const handleClick = async (query) => {
-  const headers = { 'Content-Type': 'application/json' };
+export async function fetchData(query) {
+  const headers =  { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' };
   const res = await fetch(API_URL, {
     method: 'POST',
     headers,
@@ -19,26 +19,14 @@ const handleClick = async (query) => {
       realtyObjects {
         edges {
           node {
-            id
-            databaseId
-            title
-            featuredImage {
-              node {
-                id
-                sourceUrl
-              }
-            }
             Real_estate_object {
+              vendorCode
+              title
               forrent
               price
               sqft
               city
               location
-              gallery {
-                image {
-                  link
-                }
-              }
               propertytype
               yearbuilding
               lat
@@ -46,6 +34,14 @@ const handleClick = async (query) => {
               bed
               bath
               featured
+              mainImage {
+                sourceUrl
+              }
+              gallery {
+                image {
+                  link
+                }
+              }
               features {
                 airconditioning
                 dryer
@@ -58,6 +54,9 @@ const handleClick = async (query) => {
                 tvcable
                 washer
                 winecellar
+              }
+              catobject {
+                tags
               }
             }
           }
@@ -84,8 +83,10 @@ const handleClick = async (query) => {
   
 }
 
+fetchData()
+
 //console.log('DATA =', filePath)
-const Mydata = handleClick()
+//const Mydata = handleClick()
 //  console.log('DATA =', Mydata)
 
 const Faq = () => {

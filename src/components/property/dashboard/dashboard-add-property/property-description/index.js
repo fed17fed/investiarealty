@@ -56,7 +56,7 @@ const PropertyDescription = () => {
         </div>
         {/* End .col-12 */}
 
-        <div className="col-sm-12">
+        {/* <div className="col-sm-12">
           <div className="mb20">
             <label className="heading-color ff-heading fw600 mb10">
               Описание
@@ -68,7 +68,7 @@ const PropertyDescription = () => {
               defaultValue={""}
             />
           </div>
-        </div>
+        </div> */}
         {/* End .col-6 */}
 
         <div className="col-sm-6 col-xl-4">

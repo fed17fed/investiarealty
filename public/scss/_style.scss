@@ -8520,7 +8520,7 @@ li.mm-listitem:focus {
 }
 .mbp_pagination .page-item:first-child,
 .mbp_pagination .page-item:last-child {
-    background-color: #ffffff;
+    background-color: #8fa5ba;
     -webkit-box-shadow: 0px 1px 4px rgba(24, 26, 32, 0.07);
     -o-box-shadow: 0px 1px 4px rgba(24, 26, 32, 0.07);
     box-shadow: 0px 1px 4px rgba(24, 26, 32, 0.07);
@@ -9776,7 +9776,8 @@ input:focus-visible {
     margin-bottom: 15px;
 }
 .widget-wrapper .form-check-label,
-.widget-wrapper .custom_checkbox {
+.widget-wrapper .custom_checkbox,
+.dashboard__main .custom_checkbox {
     font-size: 14px;
 }
 .widget-wrapper .custom_checkbox {

@@ -1,4 +1,4 @@
-import useSWR from "swr"
+import useSWR, { preload } from 'swr'
 import { request } from "graphql-request"
 
 const API_URL = process.env.NEXT_PUBLIC_MY_WORDPRESS_API_URL
@@ -11,23 +11,14 @@ export default function Objects() {
       realtyObjects {
         edges {
           node {
-            title
-            featuredImage {
-              node {
-                sourceUrl
-              }
-            }        
             Real_estate_object {
+              vendorCode
+              title
               forrent
               price
               sqft
               city
               location
-              gallery {
-                image {
-                  link
-                }
-              }
               propertytype
               yearbuilding
               lat
@@ -35,6 +26,14 @@ export default function Objects() {
               bed
               bath
               featured
+              mainImage {
+                sourceUrl
+              }
+              gallery {
+                image {
+                  link
+                }
+              }
               features {
                 airconditioning
                 dryer
@@ -48,7 +47,10 @@ export default function Objects() {
                 washer
                 winecellar
               }
-            }        
+              catobject {
+                tags
+              }
+            }
           }
         }
       }
@@ -57,8 +59,8 @@ export default function Objects() {
   )
 
   if (error) return <div>failed to load</div>
-  if (isLoading) return <div className="loading_center">loading...</div>
+  if (isLoading) return <div className="loading_center">loading...</div> 
   const { realtyObjects: { edges }} = data
-
-  return { user: edges, isLoading, error };
+  const lists = edges?.map((item) => item.node.Real_estate_object );
+  return {lists, isLoading, error };
 }

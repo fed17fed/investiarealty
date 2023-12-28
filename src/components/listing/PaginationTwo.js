@@ -21,6 +21,8 @@ const PaginationTwo = (
         }
       };
 
+      const dataLength = data?.length;
+      
   return (
     <div className="mbp_pagination text-center">
       <ul className="page_navigation">
@@ -43,7 +45,7 @@ const PaginationTwo = (
         className="page-link pointer">1</span>
           
         </li>
-        {data.length > pageCapacity ? (
+        {data?.length > pageCapacity ? (
           <li
             onClick={() => setPageNumber(2)}
             className={pageNumber == 2 ? "active page-item" : "page-item"}
@@ -56,7 +58,7 @@ const PaginationTwo = (
         ) : (
           ""
         )}
-        {data.length > pageCapacity * 2 ? (
+        {data?.length > pageCapacity * 2 ? (
           <li
             onClick={() => setPageNumber(3)}
             className={pageNumber == 3 ? "active page-item" : "page-item"}
@@ -70,7 +72,7 @@ const PaginationTwo = (
           ""
         )}
 
-        {data.length > pageCapacity * 4 && pageNumber != 4 && <span>...</span>}
+        {data?.length > pageCapacity * 4 && pageNumber != 4 && <span>...</span>}
         {pageNumber >  3 && (Math.ceil(data.length / pageCapacity)) != pageNumber ? (
           <li
             className={
@@ -87,7 +89,7 @@ const PaginationTwo = (
         ) : (
           ""
         )}
-        {data.length >  pageCapacity * 4 ? (
+        {data?.length >  pageCapacity * 4 ? (
           <li
             className={
               pageNumber == Math.ceil(data.length / pageCapacity)
@@ -122,7 +124,7 @@ const PaginationTwo = (
       </ul>
       <p className="mt10 pagination_page_count text-center">
 
-        {((pageNumber - 1) * 8) + 1}-{(pageNumber * 8) >data.length ? data.length :(pageNumber * 8) } of {data.length}+ property available
+        { ((pageNumber - 1) * 8) + 1}-{(pageNumber * 8) >dataLength ? dataLength :(pageNumber * 8) } of {dataLength}+ property available
       </p>
     </div>
   );

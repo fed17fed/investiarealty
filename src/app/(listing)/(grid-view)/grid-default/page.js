@@ -1,15 +1,88 @@
 import Header from "@/components/home/home-v5/Header";
 import Footer from "@/components/home/home-v5/footer/index";
 import MobileMenu from "@/components/common/mobile-menu";
-
 import React from "react";
 import PropertyFiltering from "@/components/listing/grid-view/grid-default/PropertyFiltering";
+
+const API_URL = process.env.NEXT_PUBLIC_MY_WORDPRESS_API_URL
+export async function fetchData(query) {
+  const headers =  { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' };
+  const res = await fetch(API_URL, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({ query:`
+    query Objects {
+      realtyObjects {
+        edges {
+          node {
+            Real_estate_object {
+              vendorCode
+              title
+              forrent
+              price
+              sqft
+              city
+              location
+              propertytype
+              yearbuilding
+              lat
+              long
+              bed
+              bath
+              featured
+              mainImage {
+                sourceUrl
+              }
+              gallery {
+                image {
+                  link
+                }
+              }
+              features {
+                airconditioning
+                dryer
+                fieldGroupName
+                frontyard
+                lakeview
+                lawn
+                outdoorshower
+                refrigerator
+                tvcable
+                washer
+                winecellar
+              }
+              catobject {
+                tags
+              }
+            }
+          }
+        }
+      }
+    }
+    `})
+  });
+
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data')
+  }
+  
+  const data = await res.json();
+  const { data: {realtyObjects: { edges }}} = data
+  const lists = edges?.map((item) => item.node.Real_estate_object ) 
+
+  return { props: { lists } }
+  
+}
+
+// fetchData()
 
 export const metadata = {
   title: "Gird Default || Homez - Real Estate NextJS Template",
 };
 
-const GridDefault = () => {
+const GridDefault = ( lists ) => {
+  
   return (
     <>
       {/* Main Header Nav */}
@@ -48,7 +121,7 @@ const GridDefault = () => {
       {/* End Breadcumb Sections */}
 
       {/* Property Filtering */}
-      <PropertyFiltering/>
+      <PropertyFiltering lists={ lists }/>
       {/* Property Filtering */}
 
       {/* Start Our Footer */}
@@ -61,3 +134,7 @@ const GridDefault = () => {
 };
 
 export default GridDefault;
+
+
+
+

@@ -4,104 +4,14 @@
       "edges": [
         {
           "node": {
-            "id": "cG9zdDoxNDM=",
-            "databaseId": 143,
-            "title": "Luxury villa in San Diego",
-            "featuredImage": {
-              "node": {
-                "id": "cG9zdDo1NQ==",
-                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/11/luxury-house.webp"
-              }
-            },
             "Real_estate_object": {
-              "forrent": true,
-              "price": "$14,000",
-              "sqft": "1200",
-              "city": "New York",
-              "location": "New York City, CA, USA",
-              "gallery": null,
-              "propertytype": "Houses",
-              "yearbuilding": "2018",
-              "lat": "40.7279707552121",
-              "long": "-74.07152705896405",
-              "bed": "1",
-              "bath": "2",
-              "featured": true,
-              "features": {
-                "airconditioning": "Air Conditioning",
-                "dryer": "Dryer",
-                "fieldGroupName": "features",
-                "frontyard": "Front yard",
-                "lakeview": "Lake view",
-                "lawn": "Lawn",
-                "outdoorshower": "Outdoor Shower",
-                "refrigerator": "Refrigerator",
-                "tvcable": "TV Cable",
-                "washer": "Washer",
-                "winecellar": "Wine cellar"
-              }
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "cG9zdDoxMTU=",
-            "databaseId": 115,
-            "title": "Luxury villa in Rego Park",
-            "featuredImage": {
-              "node": {
-                "id": "cG9zdDo1NQ==",
-                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/11/luxury-house.webp"
-              }
-            },
-            "Real_estate_object": {
-              "forrent": true,
-              "price": "$14,000",
-              "sqft": "1200",
-              "city": "New York",
-              "location": "New York City, CA, USA",
-              "gallery": null,
-              "propertytype": "Houses",
-              "yearbuilding": "2018",
-              "lat": "40.7279707552121",
-              "long": "-74.07152705896405",
-              "bed": "1",
-              "bath": "2",
-              "featured": true,
-              "features": {
-                "airconditioning": "Air Conditioning",
-                "dryer": "Dryer",
-                "fieldGroupName": "features",
-                "frontyard": "Front yard",
-                "lakeview": "Lake view",
-                "lawn": "Lawn",
-                "outdoorshower": "Outdoor Shower",
-                "refrigerator": "Refrigerator",
-                "tvcable": "TV Cable",
-                "washer": "Washer",
-                "winecellar": "Wine cellar"
-              }
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "cG9zdDoxMDE=",
-            "databaseId": 101,
-            "title": "Equestrian Family Home",
-            "featuredImage": {
-              "node": {
-                "id": "cG9zdDoxMDI=",
-                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/12/listing-single-1.webp"
-              }
-            },
-            "Real_estate_object": {
+              "vendorCode": "h0001",
+              "title": "Family Home - 1",
               "forrent": null,
               "price": "$14,000",
               "sqft": "1200",
               "city": "New York",
               "location": "New York City, CA, USA",
-              "gallery": null,
               "propertytype": "Houses",
               "yearbuilding": "2018",
               "lat": "40.7279707552121",
@@ -109,6 +19,10 @@
               "bed": "1",
               "bath": "2",
               "featured": true,
+              "mainImage": {
+                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/12/g1-3.webp"
+              },
+              "gallery": null,
               "features": {
                 "airconditioning": "Air Conditioning",
                 "dryer": "Dryer",
@@ -121,7 +35,420 @@
                 "tvcable": "TV Cable",
                 "washer": "Washer",
                 "winecellar": "Wine cellar"
-              }
+              },
+              "catobject": [
+                {
+                  "tags": "house"
+                },
+                {
+                  "tags": "office"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "Real_estate_object": {
+              "vendorCode": "h0002",
+              "title": "Family Home - 2",
+              "forrent": null,
+              "price": "$14,000",
+              "sqft": "1200",
+              "city": "New York",
+              "location": "New York City, CA, USA",
+              "propertytype": "Houses",
+              "yearbuilding": "2018",
+              "lat": "40.7279707552121",
+              "long": "-74.07152705896405",
+              "bed": "1",
+              "bath": "2",
+              "featured": true,
+              "mainImage": {
+                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/12/g1-1.webp"
+              },
+              "gallery": null,
+              "features": {
+                "airconditioning": "Air Conditioning",
+                "dryer": "Dryer",
+                "fieldGroupName": "features",
+                "frontyard": "Front yard",
+                "lakeview": "Lake view",
+                "lawn": "Lawn",
+                "outdoorshower": "Outdoor Shower",
+                "refrigerator": "Refrigerator",
+                "tvcable": "TV Cable",
+                "washer": "Washer",
+                "winecellar": "Wine cellar"
+              },
+              "catobject": [
+                {
+                  "tags": "house"
+                },
+                {
+                  "tags": "office"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "Real_estate_object": {
+              "vendorCode": "h0003",
+              "title": "Family Home - 3",
+              "forrent": null,
+              "price": "$14,000",
+              "sqft": "1200",
+              "city": "New York",
+              "location": "New York City, CA, USA",
+              "propertytype": "Houses",
+              "yearbuilding": "2018",
+              "lat": "40.7279707552121",
+              "long": "-74.07152705896405",
+              "bed": "1",
+              "bath": "2",
+              "featured": true,
+              "mainImage": {
+                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/12/listing-single-1.webp"
+              },
+              "gallery": null,
+              "features": {
+                "airconditioning": "Air Conditioning",
+                "dryer": "Dryer",
+                "fieldGroupName": "features",
+                "frontyard": "Front yard",
+                "lakeview": "Lake view",
+                "lawn": "Lawn",
+                "outdoorshower": "Outdoor Shower",
+                "refrigerator": "Refrigerator",
+                "tvcable": "TV Cable",
+                "washer": "Washer",
+                "winecellar": "Wine cellar"
+              },
+              "catobject": [
+                {
+                  "tags": "house"
+                },
+                {
+                  "tags": "office"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "Real_estate_object": {
+              "vendorCode": "h0004",
+              "title": "Family Home - 4",
+              "forrent": null,
+              "price": "$14,000",
+              "sqft": "1200",
+              "city": "New York",
+              "location": "New York City, CA, USA",
+              "propertytype": "Houses",
+              "yearbuilding": "2018",
+              "lat": "40.7279707552121",
+              "long": "-74.07152705896405",
+              "bed": "1",
+              "bath": "2",
+              "featured": true,
+              "mainImage": {
+                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/12/g1-1.webp"
+              },
+              "gallery": null,
+              "features": {
+                "airconditioning": "Air Conditioning",
+                "dryer": "Dryer",
+                "fieldGroupName": "features",
+                "frontyard": "Front yard",
+                "lakeview": "Lake view",
+                "lawn": "Lawn",
+                "outdoorshower": "Outdoor Shower",
+                "refrigerator": "Refrigerator",
+                "tvcable": "TV Cable",
+                "washer": "Washer",
+                "winecellar": "Wine cellar"
+              },
+              "catobject": [
+                {
+                  "tags": "house"
+                },
+                {
+                  "tags": "office"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "Real_estate_object": {
+              "vendorCode": "h0005",
+              "title": "Family Home - 5",
+              "forrent": null,
+              "price": "$14,000",
+              "sqft": "1200",
+              "city": "New York",
+              "location": "New York City, CA, USA",
+              "propertytype": "Houses",
+              "yearbuilding": "2018",
+              "lat": "40.7279707552121",
+              "long": "-74.07152705896405",
+              "bed": "1",
+              "bath": "2",
+              "featured": true,
+              "mainImage": {
+                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/12/g1-2.webp"
+              },
+              "gallery": null,
+              "features": {
+                "airconditioning": "Air Conditioning",
+                "dryer": "Dryer",
+                "fieldGroupName": "features",
+                "frontyard": "Front yard",
+                "lakeview": "Lake view",
+                "lawn": "Lawn",
+                "outdoorshower": "Outdoor Shower",
+                "refrigerator": "Refrigerator",
+                "tvcable": "TV Cable",
+                "washer": "Washer",
+                "winecellar": "Wine cellar"
+              },
+              "catobject": [
+                {
+                  "tags": "house"
+                },
+                {
+                  "tags": "office"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "Real_estate_object": {
+              "vendorCode": "h0006",
+              "title": "Family Home - 6",
+              "forrent": null,
+              "price": "$14,000",
+              "sqft": "1200",
+              "city": "New York",
+              "location": "New York City, CA, USA",
+              "propertytype": "Houses",
+              "yearbuilding": "2018",
+              "lat": "40.7279707552121",
+              "long": "-74.07152705896405",
+              "bed": "1",
+              "bath": "2",
+              "featured": true,
+              "mainImage": {
+                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/12/g1-3.webp"
+              },
+              "gallery": null,
+              "features": {
+                "airconditioning": "Air Conditioning",
+                "dryer": "Dryer",
+                "fieldGroupName": "features",
+                "frontyard": "Front yard",
+                "lakeview": "Lake view",
+                "lawn": "Lawn",
+                "outdoorshower": "Outdoor Shower",
+                "refrigerator": "Refrigerator",
+                "tvcable": "TV Cable",
+                "washer": "Washer",
+                "winecellar": "Wine cellar"
+              },
+              "catobject": [
+                {
+                  "tags": "house"
+                },
+                {
+                  "tags": "office"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "Real_estate_object": {
+              "vendorCode": "h0007",
+              "title": "Family Home - 7",
+              "forrent": null,
+              "price": "$14,000",
+              "sqft": "1200",
+              "city": "New York",
+              "location": "New York City, CA, USA",
+              "propertytype": "Houses",
+              "yearbuilding": "2018",
+              "lat": "40.7279707552121",
+              "long": "-74.07152705896405",
+              "bed": "1",
+              "bath": "2",
+              "featured": true,
+              "mainImage": {
+                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/12/g1-1.webp"
+              },
+              "gallery": null,
+              "features": {
+                "airconditioning": "Air Conditioning",
+                "dryer": "Dryer",
+                "fieldGroupName": "features",
+                "frontyard": "Front yard",
+                "lakeview": "Lake view",
+                "lawn": "Lawn",
+                "outdoorshower": "Outdoor Shower",
+                "refrigerator": "Refrigerator",
+                "tvcable": "TV Cable",
+                "washer": "Washer",
+                "winecellar": "Wine cellar"
+              },
+              "catobject": [
+                {
+                  "tags": "house"
+                },
+                {
+                  "tags": "office"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "Real_estate_object": {
+              "vendorCode": "h0008",
+              "title": "Family Home - 8",
+              "forrent": null,
+              "price": "$14,000",
+              "sqft": "1200",
+              "city": "New York",
+              "location": "New York City, CA, USA",
+              "propertytype": "Houses",
+              "yearbuilding": "2018",
+              "lat": "40.7279707552121",
+              "long": "-74.07152705896405",
+              "bed": "1",
+              "bath": "2",
+              "featured": true,
+              "mainImage": {
+                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/12/g1-2.webp"
+              },
+              "gallery": null,
+              "features": {
+                "airconditioning": "Air Conditioning",
+                "dryer": "Dryer",
+                "fieldGroupName": "features",
+                "frontyard": "Front yard",
+                "lakeview": "Lake view",
+                "lawn": "Lawn",
+                "outdoorshower": "Outdoor Shower",
+                "refrigerator": "Refrigerator",
+                "tvcable": "TV Cable",
+                "washer": "Washer",
+                "winecellar": "Wine cellar"
+              },
+              "catobject": [
+                {
+                  "tags": "house"
+                },
+                {
+                  "tags": "office"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "Real_estate_object": {
+              "vendorCode": "h0009",
+              "title": "Family Home - 9",
+              "forrent": null,
+              "price": "$14,000",
+              "sqft": "1200",
+              "city": "New York",
+              "location": "New York City, CA, USA",
+              "propertytype": "Houses",
+              "yearbuilding": "2018",
+              "lat": "40.7279707552121",
+              "long": "-74.07152705896405",
+              "bed": "1",
+              "bath": "2",
+              "featured": true,
+              "mainImage": {
+                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/12/g1-3.webp"
+              },
+              "gallery": null,
+              "features": {
+                "airconditioning": "Air Conditioning",
+                "dryer": "Dryer",
+                "fieldGroupName": "features",
+                "frontyard": "Front yard",
+                "lakeview": "Lake view",
+                "lawn": "Lawn",
+                "outdoorshower": "Outdoor Shower",
+                "refrigerator": "Refrigerator",
+                "tvcable": "TV Cable",
+                "washer": "Washer",
+                "winecellar": "Wine cellar"
+              },
+              "catobject": [
+                {
+                  "tags": "house"
+                },
+                {
+                  "tags": "office"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "Real_estate_object": {
+              "vendorCode": "h0010",
+              "title": "Family Home - 10",
+              "forrent": null,
+              "price": "$14,000",
+              "sqft": "1200",
+              "city": "New York",
+              "location": "New York City, CA, USA",
+              "propertytype": "Houses",
+              "yearbuilding": "2018",
+              "lat": "40.7279707552121",
+              "long": "-74.07152705896405",
+              "bed": "1",
+              "bath": "2",
+              "featured": true,
+              "mainImage": {
+                "sourceUrl": "https://cv.test.ut.in.ua/wp-content/uploads/2023/12/listing-single-1.webp"
+              },
+              "gallery": null,
+              "features": {
+                "airconditioning": "Air Conditioning",
+                "dryer": "Dryer",
+                "fieldGroupName": "features",
+                "frontyard": "Front yard",
+                "lakeview": "Lake view",
+                "lawn": "Lawn",
+                "outdoorshower": "Outdoor Shower",
+                "refrigerator": "Refrigerator",
+                "tvcable": "TV Cable",
+                "washer": "Washer",
+                "winecellar": "Wine cellar"
+              },
+              "catobject": [
+                {
+                  "tags": "house"
+                },
+                {
+                  "tags": "office"
+                }
+              ]
             }
           }
         }

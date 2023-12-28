@@ -136,7 +136,7 @@ const Header = () => {
                       width={25}
                       height={9}
                       className="img-2"
-                      src="/images/icon/nav-icon-dark.svg"
+                      src="/images/icon/nav-icon-white.svg"
                       alt="humberger menu"
                     />
                   </a>

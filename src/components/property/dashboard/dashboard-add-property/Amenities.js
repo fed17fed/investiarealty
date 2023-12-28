@@ -49,6 +49,21 @@ const Amenities = () => {
           </div>
         </div>
       ))}
+        <div className="container">
+          <div className="col-sm-8">
+            <div className="mb10 mt30">
+              <label className="heading-color ff-heading fw600 mb10">
+                Описание
+              </label>
+              <textarea
+                cols={30}
+                rows={10}
+                placeholder="Опишите вашу недвижимость"
+                defaultValue={""}
+              />
+            </div>
+          </div>
+        </div>
     </div>
   );
 };

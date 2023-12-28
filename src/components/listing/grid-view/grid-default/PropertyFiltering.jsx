@@ -1,69 +1,18 @@
 "use client";
-import listings from "@/data/listings";
 import React, { useState, useEffect } from "react";
 import ListingSidebar from "../../sidebar";
 import TopFilterBar from "./TopFilterBar";
 import FeaturedListings from "./FeatuerdListings";
 import PaginationTwo from "../../PaginationTwo";
-import Objects from "@/dataApi/Objects";
+import listings8000 from "@/data/listings8000";
+//import Realty from "@/dataApi/Realty";
+//import Objects from "@/dataApi/Objects";
 
-
-
-export default function PropertyFiltering() {
-
-// const API_URL = process.env.NEXT_PUBLIC_MY_WORDPRESS_API_URL
-// const fetcher = query => request(API_URL, query)
-// const { data, error, isLoading } = useSWR(
-//   `query Objects {
-//       realtyObjects {
-//         edges {
-//           node {
-//             Real_estate_object {
-//               forrent
-//               price
-//               sqft
-//               city
-//               location
-//               gallery {
-//                 image {
-//                   link
-//                 }
-//               }
-//               propertytype
-//               yearbuilding
-//               lat
-//               long
-//               bed
-//               bath
-//               featured
-//               features {
-//                 airconditioning
-//                 dryer
-//                 fieldGroupName
-//                 frontyard
-//                 lakeview
-//                 lawn
-//                 outdoorshower
-//                 refrigerator
-//                 tvcable
-//                 washer
-//                 winecellar
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }`,
-//   fetcher
-// )
-
-// if (error) return <div>failed to load</div>
-// if (isLoading) return <div className="loading_center">loading...</div>
-
-const { user } = Objects();
-  // const {realtyObjects:{edges}} = user;
-  //console.log('Myuser = ', user);
-  console.log('Mylistings = ', listings);
+export default function PropertyFiltering() {  
+  //const { lists } = Objects();  
+  // const lists = user?.map((item) => item.node.Real_estate_object ); 
+  // console.log('Myuser_lists = ', lists);  
+ // console.log('Myuser = ', lists);
 
   const [filteredData, setFilteredData] = useState([]);
 
@@ -79,15 +28,14 @@ const { user } = Objects();
 
   useEffect(() => {
     setPageItems(
-      sortedFilteredData.slice((pageNumber - 1) * 8, pageNumber * 8)
+      sortedFilteredData?.slice((pageNumber - 1) * 8, pageNumber * 8)
     );
     setPageContentTrac([
       (pageNumber - 1) * 8 + 1,
       pageNumber * 8,
-      sortedFilteredData.length,
+      sortedFilteredData?.length,
     ]);
-  }, [pageNumber, sortedFilteredData]);
-
+  }, [pageNumber, sortedFilteredData]);   
   const [listingStatus, setListingStatus] = useState("Все");
   const [propertyTypes, setPropertyTypes] = useState([]);
   const [priceRange, setPriceRange] = useState([0, 100000]);
@@ -138,7 +86,7 @@ const { user } = Objects();
     setBathroms(elm);
   };
   const handlelocation = (elm) => {
-    console.log(elm);
+    //console.log(elm);
     setLocation(elm);
   };
   const handlesquirefeet = (elm) => {
@@ -170,7 +118,6 @@ const { user } = Objects();
     listingStatus,
     propertyTypes,
     resetFilter,
-
     bedrooms,
     bathroms,
     location,
@@ -179,18 +126,12 @@ const { user } = Objects();
     categories,
     setPropertyTypes,
     setSearchQuery,
-  };
-
-
-  
-  
-  // const {data, error} = Objects;
-  // console.log(data);
-
+  }; 
 
   useEffect(() => {
-    console.log('Myuser7777 = ', user);
-    const refItems = listings.filter((elm) => {
+    
+    const refItems = listings8000?.filter((elm) => {
+      // console.log('Myuser7777 = ', elm);
       if (listingStatus == "Все") {
         return true;
       } else if (listingStatus == "Купить") {
@@ -199,26 +140,27 @@ const { user } = Objects();
         return elm.forRent;
       }
     });
+   
 
     let filteredArrays = [];
 
     if (propertyTypes.length > 0) {
       const filtered = refItems.filter((elm) =>
         propertyTypes.includes(elm.propertyType)
-      );
+      );      
       filteredArrays = [...filteredArrays, filtered];
-    }
+    }    
     filteredArrays = [
       ...filteredArrays,
-      refItems.filter((el) => el.bed >= bedrooms),
+      refItems?.filter((el) => el.bed >= bedrooms),
     ];
     filteredArrays = [
       ...filteredArrays,
-      refItems.filter((el) => el.bath >= bathroms),
+      refItems?.filter((el) => el.bath >= bathroms),
     ];
     filteredArrays = [
       ...filteredArrays,
-      refItems.filter(
+      refItems?.filter(
         (el) =>
           el.city
             .toLocaleLowerCase()
@@ -236,24 +178,24 @@ const { user } = Objects();
       ),
     ];
 
-    filteredArrays = [
-      ...filteredArrays,
-      !categories.length
-        ? [...refItems]
-        : refItems.filter((elm) =>
-            categories.every((elem) => elm.features.includes(elem))
-          ),
-    ];
+    // filteredArrays = [
+    //   ...filteredArrays,
+    //   !categories.length
+    //     ? [...refItems]
+    //     : refItems.filter((elm) =>
+    //         categories.every((elem) => elm.features.includes(elem))
+    //       ),
+    // ];
 
     if (location != "All Cities") {
       filteredArrays = [
         ...filteredArrays,
-        refItems.filter((el) => el.city == location),
+        refItems?.filter((el) => el.city == location),
       ];
     }
 
     if (priceRange.length > 0) {
-      const filtered = refItems.filter(
+      const filtered = refItems?.filter(
         (elm) =>
           Number(elm.price.split("$")[1].split(",").join("")) >=
             priceRange[0] &&
@@ -263,7 +205,7 @@ const { user } = Objects();
     }
 
     if (squirefeet.length > 0 && squirefeet[1]) {
-      console.log(squirefeet);
+      // console.log(squirefeet);
       const filtered = refItems.filter(
         (elm) =>
           elm.sqft >= Number(squirefeet[0]) && elm.sqft <= Number(squirefeet[1])
@@ -279,7 +221,7 @@ const { user } = Objects();
       filteredArrays = [...filteredArrays, filtered];
     }
 
-    const commonItems = refItems.filter((item) =>
+    const commonItems = refItems?.filter((item) =>
       filteredArrays.every((array) => array.includes(item))
     );
 

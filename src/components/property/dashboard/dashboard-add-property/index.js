@@ -137,7 +137,7 @@ const AddPropertyTabContent = () => {
             </div>
           </div>
         </div>
-        {/* End tab for Select Amenities */}
+        {/* End tab for Select Amenities */}        
       </div>
     </>
   );
