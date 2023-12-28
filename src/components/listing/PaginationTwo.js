@@ -58,7 +58,7 @@ const PaginationTwo = (
         ) : (
           ""
         )}
-        {data?.length > pageCapacity * 2 ? (
+        {/* {data?.length > pageCapacity * 2 ? (
           <li
             onClick={() => setPageNumber(3)}
             className={pageNumber == 3 ? "active page-item" : "page-item"}
@@ -70,10 +70,10 @@ const PaginationTwo = (
           </li>
         ) : (
           ""
-        )}
+        )} */}
 
-        {data?.length > pageCapacity * 4 && pageNumber != 4 && <span>...</span>}
-        {pageNumber >  3 && (Math.ceil(data.length / pageCapacity)) != pageNumber ? (
+        {data?.length > pageCapacity * 3 && pageNumber != 3 && <span>...</span>}
+        {pageNumber >  2 && (Math.ceil(data.length / pageCapacity)) != pageNumber ? (
           <li
             className={
              
@@ -85,6 +85,22 @@ const PaginationTwo = (
             <span
         className="page-link pointer">
             {pageNumber}</span>
+          </li>
+        ) : (
+          ""
+        )}
+        {pageNumber >  (pageNumber - 1) && (Math.ceil(data.length / pageCapacity) - 1) != pageNumber ? (
+          <li
+            className={
+             
+               "page-item"
+               
+            }
+            onClick={() => setPageNumber(Math.ceil(data.length / pageCapacity) - 1)}
+          >
+            <span
+        className="page-link pointer">
+            {Math.ceil(data.length / pageCapacity) - 1}</span>
           </li>
         ) : (
           ""
@@ -105,11 +121,6 @@ const PaginationTwo = (
         ) : (
           ""
         )}
-
-
-
-     
-
 
 
         <li className="page-item pointer">

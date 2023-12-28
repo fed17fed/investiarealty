@@ -176,6 +176,22 @@ const PropertyDescription = () => {
         </div> */}
         {/* End .col-6 */}
       </div>
+      {/* <div className="row">
+        <div className="realty_form_btn">
+            <div className="">
+              <button
+                type="button"
+                class="advance-search-icon ud-btn btn-thm"
+              >Previous</button>
+            </div>
+            <div className="">
+              <button
+                type="button"
+                class="advance-search-icon ud-btn btn-thm"
+              >Next</button>
+            </div>
+          </div>
+      </div> */}
     </form>
   );
 };

@@ -20,7 +20,7 @@ const FeaturedListings = ({data,colstyle}) => {
                 alt="listings"                
               />
               <div className="sale-sticker-wrap">
-                {!list.forrent && (
+                {!list.forRent && (
                   <div className="list-tag fz12">
                     <span className="flaticon-electricity me-2" />
                     Рекомендуем

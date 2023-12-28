@@ -5,15 +5,31 @@ import TopFilterBar from "./TopFilterBar";
 import FeaturedListings from "./FeatuerdListings";
 import PaginationTwo from "../../PaginationTwo";
 import listings8000 from "@/data/listings8000";
-//import Realty from "@/dataApi/Realty";
+//import MyPage from "../../../../../pages/myPage";
+//import { Realty } from "../../../../../pages/realty";
+//import { Realty } from "@/dataApi/Realty";
 //import Objects from "@/dataApi/Objects";
 
 export default function PropertyFiltering() {  
-  //const { lists } = Objects();  
+
+  // const [data, setData] = useState(null);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const res = await fetch('../../../../../pages/realty');
+  //     const newData = await res.json();
+  //     setData(newData);
+  //     console.log('Myuser_res = ', res);  
+  //   };
+
+  //   fetchData();
+  // }, []);
+
+
+  // const { lists } =  MyPage();  
   // const lists = user?.map((item) => item.node.Real_estate_object ); 
   // console.log('Myuser_lists = ', lists);  
- // console.log('Myuser = ', lists);
-
+  
   const [filteredData, setFilteredData] = useState([]);
 
   const [currentSortingOption, setCurrentSortingOption] = useState("По новизне");

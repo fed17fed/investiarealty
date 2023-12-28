@@ -84,6 +84,22 @@ const AddPropertyTabContent = () => {
           <div className="ps-widget p30 position-relative">
             <h4 className="title fz17 mb30">Описание недвижимости</h4>
             <PropertyDescription />
+            <div className="row">
+              <div className="realty_form_btn">
+                    <div className="">
+                      {/* <button
+                        type="button"
+                        class="advance-search-icon ud-btn btn-thm"
+                      >Previous</button> */}
+                    </div>
+                    <div className="">
+                      <button
+                        type="button"
+                        class="advance-search-icon ud-btn btn-thm"
+                      >Next</button>
+                    </div>
+              </div>
+            </div>
           </div>
         </div>
         {/* End tab for Property Description */}
@@ -94,7 +110,25 @@ const AddPropertyTabContent = () => {
           role="tabpanel"
           aria-labelledby="nav-item2-tab"
         >
+          <div className="ps-widget p30 overflow-hidden position-relative">
           <UploadMedia />
+              <div className="row">
+                <div className="realty_form_btn">
+                      <div className="">
+                        <button
+                          type="button"
+                          class="advance-search-icon ud-btn btn-thm"
+                        >Previous</button>
+                      </div>
+                      <div className="">
+                        <button
+                          type="button"
+                          class="advance-search-icon ud-btn btn-thm"
+                        >Next</button>
+                      </div>
+                </div>
+              </div>
+          </div>
         </div>
         {/* End tab for Upload photos of your property */}
 
@@ -107,6 +141,22 @@ const AddPropertyTabContent = () => {
           <div className="ps-widget p30 overflow-hidden position-relative">
             <h4 className="title fz17 mb30">Местоположение</h4>
             <LocationField />
+            <div className="row">
+              <div className="realty_form_btn">
+                    <div className="">
+                      <button
+                        type="button"
+                        class="advance-search-icon ud-btn btn-thm"
+                      >Previous</button>
+                    </div>
+                    <div className="">
+                      <button
+                        type="button"
+                        class="advance-search-icon ud-btn btn-thm"
+                      >Next</button>
+                    </div>
+              </div>
+            </div>
           </div>
         </div>
         {/* End tab for Listing Location */}
@@ -120,6 +170,22 @@ const AddPropertyTabContent = () => {
           <div className="ps-widget p30 overflow-hidden position-relative">
             <h4 className="title fz17 mb30">Детали объявления</h4>
             <DetailsFiled />
+            <div className="row">
+              <div className="realty_form_btn">
+                    <div className="">
+                      <button
+                        type="button"
+                        class="advance-search-icon ud-btn btn-thm"
+                      >Previous</button>
+                    </div>
+                    <div className="">
+                      <button
+                        type="button"
+                        class="advance-search-icon ud-btn btn-thm"
+                      >Next</button>
+                    </div>
+              </div>
+            </div>
           </div>
         </div>
         {/* End tab for Listing Details */}
@@ -134,6 +200,22 @@ const AddPropertyTabContent = () => {
             <h4 className="title fz17 mb30">Выберите удобства</h4>
             <div className="row">
               <Amenities />
+              <div className="row">
+              <div className="realty_form_btn">
+                    <div className="">
+                      <button
+                        type="button"
+                        class="advance-search-icon ud-btn btn-thm"
+                      >Previous</button>
+                    </div>
+                    <div className="">
+                      {/* <button
+                        type="button"
+                        class="advance-search-icon ud-btn btn-thm"
+                      >Next</button> */}
+                    </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>

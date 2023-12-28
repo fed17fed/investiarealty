@@ -6876,6 +6876,21 @@ textarea:focus {
     border-radius: 0;
 }
 
+.realty_form_btn {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.realty_form_btn .ud-btn {    
+    border-radius: 0;
+}
+
+.realty_form_btn .btn-thm {    
+    background-color: #728597;
+    border: 0;
+}
+
 .btn-thm {
     background-color: #8FA5BA;
     border: 1px solid #8FA5BA;

@@ -171,44 +171,46 @@ const DetailsFiled = () => {
           </div> 
         </div>   
 
-        <div className="row">
-          <div className="col-sm-6 col-xl-4">
-            <div className="mb20">
-              <label className="heading-color ff-heading fw600 mb10">
-                Имя
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder=""
-              />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6 col-xl-4">
+              <div className="mb20">
+                <label className="heading-color ff-heading fw600 mb10">
+                  Имя
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder=""
+                />
+              </div>
             </div>
-          </div>
-          {/* End .col-4 */}
+            {/* End .col-4 */}
 
-          <div className="col-sm-6 col-xl-4">
-            <div className="mb20">
-              <label className="heading-color ff-heading fw600 mb10">
-                Телефон
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder=""
-              />
+            <div className="col-sm-6 col-xl-4">
+              <div className="mb20">
+                <label className="heading-color ff-heading fw600 mb10">
+                  Телефон
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder=""
+                />
+              </div>
             </div>
-          </div>
-          {/* End .col-4 */}
+            {/* End .col-4 */}
 
-          <div className="col-sm-6 col-xl-4">
-            <div className="mb20">
-              <label className="heading-color ff-heading fw600 mb10">
-                Эл. почта
-              </label>
-              <input type="text" className="form-control" />
+            <div className="col-sm-6 col-xl-4">
+              <div className="mb20">
+                <label className="heading-color ff-heading fw600 mb10">
+                  Эл. почта
+                </label>
+                <input type="text" className="form-control" />
+              </div>
             </div>
+            {/* End .col-4 */}
           </div>
-          {/* End .col-4 */}
         </div>
 
         
