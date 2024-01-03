@@ -13,7 +13,7 @@ const SidebarPanel = () => {
         >
           <span className="far fa-times"></span>
         </div>
-        <h4 className="title">Welcome to Realton</h4>
+        <h4 className="title">Добро пожаловать в Investia</h4>
       </div>
       {/* End header */}
 
@@ -24,11 +24,10 @@ const SidebarPanel = () => {
           </div>
           {/* End .hiddenbar_navbar_menu */}
 
-          <div className="hiddenbar_footer position-relative bdrt1">
+          {/* <div className="hiddenbar_footer position-relative bdrt1">
             <div className="row pt45 pb30 pl30">
               <ContactInfo />
             </div>
-            {/* End .row */}
 
             <div className="row pt30 pb30 bdrt1">
               <div className="col-auto">
@@ -38,7 +37,7 @@ const SidebarPanel = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* hiddenbar_footer */}
         </div>
       </div>

@@ -36,62 +36,64 @@ const Header = () => {
         <nav className="posr">
           <div className="container posr menu_bdrt1">
             <div className="row align-items-center justify-content-between">
-            <div className="col-auto">
-                <div className="d-flex align-items-center justify-content-between">
-                  <div className="logos_title mr40">
-                      Агенство<br/>
-                      коммерческой<br/>
-                      недвижимости
+              <div className="col-auto header_flex">
+                  <div className="header_col">
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div className="logos mr40">
+                        <Link className="header-logo logo1" href="/">
+                          <div className="head_logo">
+                            investia
+                          </div>
+                        </Link>
+                        <Link className="header-logo logo2" href="/">
+                          <div className="head_logo">
+                            investia
+                          </div>
+                          {/* <Image
+                            width={138}
+                            height={44}
+                            src="/images/logo_inv.svg"
+                            alt="Header Logo"
+                          /> */}
+                        </Link>
+                      </div>
+                      {/* End Logo */}
+
+                      {/* Main Menu */}
+                      {/* <MainMenu /> */}
+                      {/* End Main Menu */}
+                    </div>
+                  </div>
+                  {/* End .col-auto */}
+
+                  <div className="header_col">
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div className="logos_title mr40">
+                          Агенство коммерческой<br/>                          
+                          недвижимости
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="header_col">
+                    <div className="d-flex">
+                      <a
+                            href="tel:+35724634829"
+                            className="tel_info align-items-center"
+                            role="button"
+                      >
+                        +357 24 634829
+                      </a>
+                      <a
+                            href="tel:+35724634830"
+                            className="tel_info align-items-center"
+                            role="button"
+                      >
+                        +357 24 634830
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-auto">
-                <div className="d-flex align-items-center justify-content-between">
-                  <div className="logos mr40">
-                    <Link className="header-logo logo1" href="/">
-                      <Image
-                        width={180}
-                        height={60}
-                        src="/images/logo_inv.svg"
-                        alt="Header Logo"
-                      />
-                    </Link>
-                    <Link className="header-logo logo2" href="/">
-                      <Image
-                        width={138}
-                        height={44}
-                        src="/images/logo_inv.svg"
-                        alt="Header Logo"
-                      />
-                    </Link>
-                  </div>
-                  {/* End Logo */}
-
-                  {/* Main Menu */}
-                  {/* <MainMenu /> */}
-                  {/* End Main Menu */}
-                </div>
-              </div>
-              {/* End .col-auto */}
-
-              <div className="col-auto">
-                <div className="d-flex">
-                  <a
-                        href="tel:+35724634829"
-                        className="tel_info align-items-center"
-                        role="button"
-                  >
-                    +357 24 634829
-                  </a>
-                  <a
-                        href="tel:+35724634830"
-                        className="tel_info align-items-center"
-                        role="button"
-                  >
-                    +357 24 634830
-                  </a>
-                </div>
-              </div>
 
               <div className="col-auto">
                 <div className="d-flex align-items-center">
@@ -109,7 +111,7 @@ const Header = () => {
                     <div className="hiden"></div>
                   ) : (                  
                   <Link
-                    className="ud-btn btn-thm add-property bdrs12 mx-2 mx-xl-4 border-0"
+                    className="ud-btn add-property mx-2 mx-xl-4 border-0"
                     href="/dashboard-add-property"
                   >
                     Добавить недвижимость

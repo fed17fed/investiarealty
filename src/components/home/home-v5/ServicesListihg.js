@@ -81,8 +81,8 @@ const ServicesListihg = () => {
           data-aos="fade-up"
           data-aos-delay={(item.id + 1) * 100} // Increase delay for each item
         >
-          <div className="category_style text-center services_blockmain">
-            <div className="category_img">
+          <div className="category_serv_style text-center services_blockmain">
+            <div className="category_serv_img">
               <Image width={60} height={60} src={item.image.guid} alt="icon" />
             </div>
             <div className="services_content">

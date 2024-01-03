@@ -18,7 +18,8 @@ const TopFilterBar = ({setCurrentSortingOption,setColstyle,colstyle,pageContentT
         <div className="page_control_shorting d-flex align-items-center justify-content-center justify-content-sm-end">
           <div className="pcs_dropdown pr10 d-flex align-items-center">
             <span style={{ minWidth: "60px" }}>Сортировать</span>
-            <select className="form-select"  onChange={(e)=>setCurrentSortingOption && setCurrentSortingOption(e.target.value)} >
+            <select className="form-select" onfocus="this.size=6;"onblur="this.size=0;"
+      onchange="this.size=1; this.blur()"  onChange={(e)=>setCurrentSortingOption && setCurrentSortingOption(e.target.value)} >
                {/* <option>По новизне</option>
                <option>Бестселлер</option>
                <option>Лучшее совпадение</option>
@@ -31,10 +32,10 @@ const TopFilterBar = ({setCurrentSortingOption,setColstyle,colstyle,pageContentT
               <option>Price High</option>
             </select>
           </div>
-          <div className={`pl15 pr15 bdrl1 bdrr1 d-none d-md-block cursor  ${!colstyle? 'menuActive':'#' } `}  onClick={()=>setColstyle(false)}>
+          <div className={`pl15 pr15 bdrl1 bdrr1 d-none d-md-block cursor no_active  ${!colstyle? 'menuActive cat_active':'#' } `}  onClick={()=>setColstyle(false)}>
             Сетка
           </div>
-          <div className={`pl15 d-none d-md-block cursor  ${colstyle? 'menuActive':'#' }`}   onClick={()=>setColstyle(true)}>
+          <div className={`pl15 d-none d-md-block cursor no_active  ${colstyle? 'menuActive cat_active':'#' }`}   onClick={()=>setColstyle(true)}>
             Список
           </div>
         </div>

@@ -43,7 +43,7 @@ module.exports = [
     bed: "2",
     bath: "1",
     sqft: 1300,
-    price: "$82,000/мес",
+    price: "$82,000",
     propertyType:'Houses',yearBuilding:2017,
     forRent: true,   
     tags: ["house", "villa", "apartments"],

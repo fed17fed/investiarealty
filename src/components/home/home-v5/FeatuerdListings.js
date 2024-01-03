@@ -40,7 +40,7 @@ const FeaturedListings = () => {
           <SwiperSlide key={listing.id}>
             <div className="item">
               <div className="listing-style7 mb60">
-                <div className="list-thumb featured_listmain">
+                <div className="list-thumb">
                   <Image
                     width={400}
                     height={260}
@@ -49,32 +49,39 @@ const FeaturedListings = () => {
                     alt="listings"
                   />
                   <div className="sale-sticker-wrap">
-                    {listing.forRent && (
+                    {/* {listing.forRent && (
                       <div className="list-tag rounded-0 fz12">
                         <span className="flaticon-electricity" />
-                        FEATURED
-                      </div>
-                    )}
-                    <div className="list-tag2 rounded-0 fz12">FOR SALE</div>
+                        Рекомендую
+                      </div>                      
+                    )} */}
+                    {listing.forRent ? (
+                      <div className="list-tag2 rounded-0 fz12">Аренда</div>               
+                    ):(<div className="list-tag2 rounded-0 fz12">Покупка</div>)}                    
                   </div>
 
                   <div className="list-meta">
-                    <a href="#" className="mr5">
+                    {/* <Link href={`/single-v3/${listing.id}`} className="mr5">
                       <span className="flaticon-fullscreen" />
-                    </a>
-                    <a href="#" className="mr5">
+                    </Link>                     */}
+                    {/* <a href="#" className="mr5">
                       <span className="flaticon-new-tab" />
-                    </a>
-                    <a href="#">
+                    </a> */}
+                    <Link href={`/single-v3/${listing.id}`} className="mr5">
                       <span className="flaticon-like" />
-                    </a>
+                    </Link> 
+                    {/* <a href="#">
+                      <span className="flaticon-like" />
+                    </a> */}
                   </div>
                 </div>
                 <div className="list-content">
                   <h6 className="list-title">
                     <Link href={`/single-v3/${listing.id}`}>{listing.title}</Link>
                   </h6>
-
+                  <h6 className="list-title">
+                    Расположение: {listing.location}
+                  </h6>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="list-price">
                       {listing.price} / <span>mo</span>

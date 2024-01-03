@@ -18,11 +18,11 @@ const Location = ({filterFunctions}) => {
       return {
         ...styles,
         backgroundColor: isSelected
-          ? "#eb6753"
+          ? "#6c757d"
           : isHovered
-          ? "#eb675312"
+          ? "#728597"
           : isFocused
-          ? "#eb675312"
+          ? "#728597"
           : undefined,
       };
     },

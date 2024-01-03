@@ -1,4 +1,5 @@
-import DefaultHeader from "@/components/common/DefaultHeader";
+//import DefaultHeader from "@/components/common/DefaultHeader";
+import Header from "@/components/home/home-v5/Header";
 import Footer from "@/components/common/default-footer";
 import MobileMenu from "@/components/common/mobile-menu";
 import EnergyClass from "@/components/property/property-single-style/common/EnergyClass";
@@ -33,7 +34,7 @@ const SingleV3 = ({params}) => {
   return (
     <>
       {/* Main Header Nav */}
-      <DefaultHeader />
+      <Header />
       {/* End Main Header Nav */}
 
       {/* Mobile Nav  */}
@@ -41,7 +42,7 @@ const SingleV3 = ({params}) => {
       {/* End Mobile Nav  */}
 
       {/* Property All Single V1 */}
-      <section className="pt60 pb90">
+      <section className="section_single_v3 pt120 pb90">
         <div className="container">
           <div className="row">
             <PropertyHeader id={params.id} />

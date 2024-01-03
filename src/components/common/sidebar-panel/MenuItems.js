@@ -1,13 +1,13 @@
 const MenuItems = () => {
   const menuItems = [
-    { id: 0, title: "Catalog", link: "/grid-default" },
-    { id: 1, title: "Apartments", link: "#"  },
-    { id: 2, title: "Bungalow", link: "#"  },
-    { id: 3, title: "Houses", link: "#"  },
-    { id: 4, title: "Loft", link: "#"  },
-    { id: 5, title: "Office", link: "#"  },
-    { id: 6, title: "Townhome", link: "#"  },
-    { id: 7, title: "Villa", link: "#"  },
+    { id: 0, title: "Недвижимость", link: "/grid-default" },
+    { id: 1, title: "О нас", link: "/about"  },
+    { id: 2, title: "Контактная информация", link: "/contact"  },
+    { id: 3, title: "Разместить вашу недвижимость  ", link: "/dashboard-add-property"  },
+    // { id: 4, title: "Loft", link: "#"  },
+    // { id: 5, title: "Office", link: "#"  },
+    // { id: 6, title: "Townhome", link: "#"  },
+    // { id: 7, title: "Villa", link: "#"  },
   ];
 
   return (

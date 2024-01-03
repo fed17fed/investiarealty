@@ -31,21 +31,12 @@ const ListingSidebar = ({filterFunctions}) => {
 
       <div className="widget-wrapper">
         <h6 className="list-title">Тип  недвижимости</h6>
-        <div className="checkbox-style1">
+        <div className="checkbox-style1 checkbox_catalog">
           <PropertyType filterFunctions={filterFunctions} />
         </div>
       </div>
       
-      {/* End .widget-wrapper */}
-
-      <div className="widget-wrapper">
-        <h6 className="list-title">Price Range</h6>
-        {/* Range Slider Desktop Version */}
-        <div className="range-slider-style1">
-          <PriceSlider filterFunctions={filterFunctions} />
-        </div>
-      </div>
-      {/* End .widget-wrapper */}
+      {/* End .widget-wrapper */}      
 
       {/* <div className="widget-wrapper">
         <h6 className="list-title">Bedrooms</h6>
@@ -64,7 +55,7 @@ const ListingSidebar = ({filterFunctions}) => {
       {/* End .widget-wrapper */}
 
       <div className="widget-wrapper advance-feature-modal">
-        <h6 className="list-title">Location</h6>
+        <h6 className="list-title">Город</h6>
         <div className="form-style2 input-group">
           <Location filterFunctions={filterFunctions} />
         </div>
@@ -72,18 +63,66 @@ const ListingSidebar = ({filterFunctions}) => {
       {/* End .widget-wrapper */}
 
       <div className="widget-wrapper">
-        <h6 className="list-title">Square Feet</h6>
+        <h6 className="list-title">Район</h6>
+        <div className="checkbox-style1 checkbox_catalog">
+          <PropertyType filterFunctions={filterFunctions} />
+        </div>
+      </div>
+
+      <div className="widget-wrapper">
+        <h6 className="list-title">Площадь объекта, м²</h6>
         <SquareFeet filterFunctions={filterFunctions}/>
       </div>
       {/* End .widget-wrapper */}
 
       <div className="widget-wrapper">
-        <h6 className="list-title">Year Built</h6>
+        <h6 className="list-title">Площадь участка, м²</h6>
         <YearBuilt filterFunctions={filterFunctions}/>
       </div>
       {/* End .widget-wrapper */}
 
+      <div className="widget-wrapper advance-feature-modal">
+        <h6 className="list-title">Количество этажей</h6>
+        <div className="form-style2 input-group">
+          <Location filterFunctions={filterFunctions} />
+        </div>
+      </div>
+      {/* End .widget-wrapper */}
+
+      <div className="widget-wrapper advance-feature-modal">
+        <h6 className="list-title">Год постройки</h6>
+        <div className="form-style2 input-group">
+          <Location filterFunctions={filterFunctions} />
+        </div>
+      </div>
+      {/* End .widget-wrapper */}
+
       <div className="widget-wrapper">
+        <h6 className="list-title">Состояние</h6>
+        <div className="checkbox-style1 checkbox_catalog">
+          <PropertyType filterFunctions={filterFunctions} />
+        </div>
+      </div>
+      {/* End .widget-wrapper */}
+
+      <div className="widget-wrapper price_filter_ren">
+        <h6 className="list-title">Ценовой диапазон</h6>
+        {/* Range Slider Desktop Version */}
+        <div className="range-slider-style1">
+          <PriceSlider filterFunctions={filterFunctions} />
+        </div>
+      </div>
+      {/* End .widget-wrapper */}
+
+      <div className="widget-wrapper">
+        <h6 className="list-title">Тип  недвижимости</h6>
+        <div className="checkbox-style1 checkbox_catalog">
+          <OtherFeatures filterFunctions={filterFunctions} />
+        </div>
+      </div>
+      {/* End .widget-wrapper */}
+
+      {/* <div className="widget-wrapper">
         <div className="feature-accordion">
           <div className="accordion" id="accordionExample">
             <div className="accordion-item border-none">
@@ -112,14 +151,14 @@ const ListingSidebar = ({filterFunctions}) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End .widget-wrapper */}
 
       <div className="widget-wrapper mb20 filter_search">
-        <div className="btn-area d-grid align-items-center">
+        <div className="btn-area d-grid align-items-center ">
           <button className="ud-btn btn-thm">
             <span className="flaticon-search align-text-top pr10" />
-            Search
+              Искать
           </button>
         </div>
       </div>
@@ -128,7 +167,7 @@ const ListingSidebar = ({filterFunctions}) => {
       <div className="reset-area d-flex align-items-center justify-content-between">
         <div onClick={()=>filterFunctions.resetFilter()} className="reset-button cursor" href="#">
           <span className="flaticon-turn-back" />
-          <u>Reset all filters</u>
+          <u>Сбросить все фильтры</u>
         </div>
         {/* <a className="reset-button" href="#">
           <span className="flaticon-favourite" />

@@ -27,7 +27,7 @@ const ContactMeta = () => {
   return (
     <div className="row">
       {contactInfoData.map((contact, index) => (
-        <div className="contact-info mb25 d-flex" key={index}>
+        <div className="contact-info d-flex" key={index}>
           <p className="info-title mb5">{contact.text}</p>
           {contact.link.startsWith("mailto:") ? (
             <h6 className="info-mail">

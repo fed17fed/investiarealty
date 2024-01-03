@@ -1,4 +1,5 @@
 import React from "react";
+import Social from "./Social";
 
 const MenuWidget = () => {
   const menuSections = [
@@ -14,8 +15,8 @@ const MenuWidget = () => {
       title: "Quick Links",
       links: [
         { label: "Политика конфиденциальности", href: "" },
-        { label: "Контакты", href: "/contact" },
-        { label: "Каталог", href: "/grid-default" },
+        // { label: "Контакты", href: "/contact" },
+        // { label: "Каталог", href: "/grid-default" },
         // { label: "Privacy Policy", href: "#" },
         // { label: "Pricing Plans", href: "#" },
         // { label: "Our Services", href: "#" },
@@ -30,7 +31,7 @@ const MenuWidget = () => {
     <>
       {" "}
       {menuSections.map((section, index) => (
-        <div className="col-sm-6 col-lg-3" key={index}>
+        <div className="col-sm-6 col-lg-3 footer_menu" key={index}>
           <div className="footer-widget ps-0">
             <div className="link-style1 mb-3">
               {/* <h6 className="text-white mb25">{section.title}</h6> */}
@@ -41,10 +42,16 @@ const MenuWidget = () => {
                   </li>
                 ))}
               </ul>
+              <div>
+                  {index === 0
+                    ? ""
+                    : <Social />
+                  }
+              </div>
             </div>
           </div>
         </div>
-      ))}
+      ))}      
     </>
   );
 };

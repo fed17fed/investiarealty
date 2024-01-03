@@ -82,14 +82,14 @@ const CategoriesListing = () => {
     <>
       {iconboxData.map((item) => (
         <div
-          className="col-sm-6 col-lg-4"
+          className="col-sm-6 col-lg-4 serv_section"
           key={item.id}
           data-aos="fade-up"
           data-aos-delay={(item.id + 1) * 100} // Increase delay for each item
         >
           <div className="category_style text-center">
             <div className="category_img">
-              <Image width={360} height={225} src={item.icon} alt="icon" />
+              <Image width={384} height={260} src={item.icon} alt="icon" />
             </div>
             <div className="category_content">
               <h4 className="category_title">{item.title}</h4>

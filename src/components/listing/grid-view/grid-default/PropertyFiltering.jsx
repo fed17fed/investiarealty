@@ -4,31 +4,10 @@ import ListingSidebar from "../../sidebar";
 import TopFilterBar from "./TopFilterBar";
 import FeaturedListings from "./FeatuerdListings";
 import PaginationTwo from "../../PaginationTwo";
-import listings8000 from "@/data/listings8000";
-//import MyPage from "../../../../../pages/myPage";
-//import { Realty } from "../../../../../pages/realty";
-//import { Realty } from "@/dataApi/Realty";
-//import Objects from "@/dataApi/Objects";
+//import listings8000 from "@/data/listings8000";
 
-export default function PropertyFiltering() {  
-
-  // const [data, setData] = useState(null);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const res = await fetch('../../../../../pages/realty');
-  //     const newData = await res.json();
-  //     setData(newData);
-  //     console.log('Myuser_res = ', res);  
-  //   };
-
-  //   fetchData();
-  // }, []);
-
-
-  // const { lists } =  MyPage();  
-  // const lists = user?.map((item) => item.node.Real_estate_object ); 
-  // console.log('Myuser_lists = ', lists);  
+export default function PropertyFiltering({lists}) { 
+  //console.log("Realty = ", lists)  
   
   const [filteredData, setFilteredData] = useState([]);
 
@@ -146,14 +125,13 @@ export default function PropertyFiltering() {
 
   useEffect(() => {
     
-    const refItems = listings8000?.filter((elm) => {
-      // console.log('Myuser7777 = ', elm);
+    const refItems = lists?.filter((elm) => {
       if (listingStatus == "Все") {
         return true;
       } else if (listingStatus == "Купить") {
-        return !elm.forRent;
+        return !elm.forrent;
       } else if (listingStatus == "Арендовать") {
-        return elm.forRent;
+        return elm.forrent;
       }
     });
    
@@ -162,7 +140,7 @@ export default function PropertyFiltering() {
 
     if (propertyTypes.length > 0) {
       const filtered = refItems.filter((elm) =>
-        propertyTypes.includes(elm.propertyType)
+        propertyTypes.includes(elm.propertytype)
       );      
       filteredArrays = [...filteredArrays, filtered];
     }    
@@ -194,14 +172,14 @@ export default function PropertyFiltering() {
       ),
     ];
 
-    // filteredArrays = [
-    //   ...filteredArrays,
-    //   !categories.length
-    //     ? [...refItems]
-    //     : refItems.filter((elm) =>
-    //         categories.every((elem) => elm.features.includes(elem))
-    //       ),
-    // ];
+    filteredArrays = [
+      ...filteredArrays,
+      !categories.length
+        ? [...refItems]
+        : refItems.filter((elm) =>
+            categories.every((elem) => elm.features.includes(elem))
+          ),
+    ];
 
     if (location != "All Cities") {
       filteredArrays = [

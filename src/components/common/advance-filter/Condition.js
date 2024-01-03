@@ -1,24 +1,21 @@
-const Amenities = () => {
+const Condition = () => {
   const amenities = [
     [
-      { label: "Мебель" },
-      { label: "Паркинг", defaultChecked: true },
-      { label: "Сигнализация"},
-      { label: "Водоснабжение", defaultChecked: true },
-      { label: "Санузел", defaultChecked: true },
+      { label: "Новое", defaultChecked: true },
+    //   { label: "Хорошее", defaultChecked: true },
+    //   { label: "Требуется ремонт" },
     ],
     [
-      { label: "Оборудование" },
-      { label: "Интернет" },
-      { label: "Видеонаблюдение" },
-      { label: "Кухня" },
-      { label: "Душевые" },
+      { label: "Хорошее"},
+    //   { label: "Dryer" },
+    //   { label: "Outdoor Shower" },
+    //   { label: "Washer" },
     ],
     [
-      { label: "Кондиционер" },
-      { label: "Телефон" },
-      { label: "Электроснабжение" },
-      { label: "Комнаты" },
+      { label: "Требуется ремонт" },
+    //   { label: "Wine cellar" },
+    //   { label: "Front yard" },
+    //   { label: "Refrigerator" },
     ],
   ];
 
@@ -46,4 +43,4 @@ const Amenities = () => {
   );
 };
 
-export default Amenities;
+export default Condition;

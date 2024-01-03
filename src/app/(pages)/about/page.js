@@ -1,7 +1,7 @@
 import CallToActions from "@/components/common/CallToActions";
-import DefaultHeader from "@/components/common/DefaultHeader";
+import Header from "@/components/home/home-v5/Header";
 import Partner from "@/components/common/Partner";
-import Footer from "@/components/common/default-footer";
+import Footer from "@/components/home/home-v5/footer";
 import MobileMenu from "@/components/common/mobile-menu";
 import Agents from "@/components/pages/about/Agents";
 import Features from "@/components/pages/about/Features";
@@ -9,8 +9,6 @@ import FunFact from "@/components/pages/about/FunFact";
 import Mission from "@/components/pages/about/Mission";
 import Image from "next/image";
 import Link from "next/link";
-// import { getAllPostsForHome } from "@/app/lib/api";
-import Mytest from "@/components/pages/about/Mytest";
 
 export const metadata = {
   title: "About  || Homez - Real Estate NextJS Template",
@@ -22,7 +20,7 @@ export default async function About() {
   return (
     <>
       {/* Main Header Nav */}
-      <DefaultHeader />
+      <Header />
       {/* End Main Header Nav */}
 
       {/* Mobile Nav  */}
@@ -30,7 +28,7 @@ export default async function About() {
       {/* End Mobile Nav  */}
 
       {/* Breadcrumb Sections */}
-      <section className="breadcumb-section2 p-0">
+      <section className="breadcumb-section2 p-0 about_us">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -212,10 +210,6 @@ export default async function About() {
       ))} 
       </section> */}
       {/* end Test */}
-
-      {/* Mytest */}
-       <Mytest />
-      {/* End Mytest  */}
 
       {/* Start Our Footer */}
       <section className="footer-style1 pt60 pb-0">

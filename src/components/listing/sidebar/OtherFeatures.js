@@ -10,9 +10,6 @@ const OtherFeatures = ({filterFunctions}) => {
     { label: "Lawn", defaultChecked: true },
     { label: "TV Cable" },
     { label: "Dryer" },
-  ];
-
-  const featuresRightColumn = [
     { label: "Outdoor Shower" },
     { label: "Washer" },
     { label: "Lake view" },
@@ -21,11 +18,20 @@ const OtherFeatures = ({filterFunctions}) => {
     { label: "Refrigerator" },
   ];
 
+  // const featuresRightColumn = [
+  //   { label: "Outdoor Shower" },
+  //   { label: "Washer" },
+  //   { label: "Lake view" },
+  //   { label: "Wine cellar" },
+  //   { label: "Front yard" },
+  //   { label: "Refrigerator" },
+  // ];
+
 
 
   return (
     <div className="row">
-      <div className="col-lg-6">
+      <div className="col-lg-12">
         <div className="checkbox-style1">
           {featuresLeftColumn.map((feature, index) => (
             <label className="custom_checkbox" key={index}>
@@ -39,7 +45,7 @@ const OtherFeatures = ({filterFunctions}) => {
       </div>
       {/* End .col-6 */}
 
-      <div className="col-lg-6">
+      {/* <div className="col-lg-6">
         <div className="checkbox-style1">
           {featuresRightColumn.map((feature, index) => (
             <label className="custom_checkbox" key={index}>
@@ -50,7 +56,7 @@ const OtherFeatures = ({filterFunctions}) => {
             </label>
           ))}
         </div>
-      </div>
+      </div> */}
       {/* End .col-6 */}
     </div>
   );

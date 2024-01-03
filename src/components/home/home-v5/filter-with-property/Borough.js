@@ -1,22 +1,16 @@
 "use client";
 import Select from "react-select";
 
-const LookingFor = () => {
+const Borough = () => {
   const inqueryType = [
-    { value: "Apartments", label: "Apartments" },
-    { value: "Bungalow", label: "Bungalow" },
-    { value: "Houses", label: "Houses" },
-    { value: "Office", label: "Office" },
-    { value: "TownHome", label: "TownHome" },
-    { value: "Villa", label: "Villa" },
+    { value: "Centre", label: "Centre" },
+    { value: "Suburb", label: "Suburb" },
+    { value: "Village", label: "Village" },
+    // { value: "Paris", label: "Paris" },
   ];
 
   const customStyles = {
-    control: (provided) => ({
-      ...provided,
-      background: "none",
-    }),
-    option: (styles, { isFocused, isSelected, isHovered, color }) => {
+    option: (styles, { isFocused, isSelected, isHovered }) => {
       return {
         ...styles,
         backgroundColor: isSelected
@@ -39,11 +33,10 @@ const LookingFor = () => {
         className="text-start select-borderless"
         classNamePrefix="select"
         required
-        placeholder="WWWWWWWWW"
         isClearable={false}
       />
     </>
   );
 };
 
-export default LookingFor;
+export default Borough;

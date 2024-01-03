@@ -39,7 +39,7 @@ const Testimonial = () => {
             <div className="item">
               <div className="testimonial-style3 mt-1 position-relative mb60">
                 <div className="testimonial-content">
-                  <span className="icon">“</span>
+                  {/* <span className="icon">“</span> */}
                 </div>
                 <div className="thumb d-flex align-items-center mb40">
                   <div className="flex-shrink-0">
@@ -53,7 +53,7 @@ const Testimonial = () => {
                   </div>
                   <div className="flex-grow-1 ms-3">
                     <h6 className="mb-0">{testimonial.name}</h6>
-                    <p className="mb-0">{testimonial.company}</p>
+                    <p className="testimonial_company mb-0">{testimonial.company}</p>
                   </div>
                 </div>
                 <p className="text">{testimonial.quote}</p>
