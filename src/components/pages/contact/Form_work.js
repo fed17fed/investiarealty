@@ -1,32 +1,25 @@
 "use client"
-import React, { useState } from 'react'
-import { useRouter } from "next/navigation";
-import { sendMail } from '@/app/api/email/route';
+import React, { useState } from 'react';
 
-const Form = ({ menuItems }) => {
+const Form = () => {
 
-  const [firstname, setFirstname] = useState('');
-  const [lastname, setLastname] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const router = useRouter();
+  const [formData, setFormData] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+    message: '',
+});
 
-const handleSubmit = async (e) => {
+// Function to update state on input change
+const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+}
+
+// Function to handle form submission
+const handleSubmit = (e) => {
     e.preventDefault();
-    const emailContent = `
-    Сообщение получено от ${firstname} ${lastname}. <br />
-    Адрес электронной почты: ${email} <br />
-    Текст сообщения: ${message}
-    `;
-    const data = await sendMail(
-      emailContent
-    );
-    console.log("DATA = ", data)
-
-    if (data?.sent) {
-      // email was sent successfully!
-      router.push('/');
-    }
+    // Function to send email will be called here
+    sendEmail(formData);
 }
 
   return (
@@ -40,8 +33,8 @@ const handleSubmit = async (e) => {
             <input
               type="text"
               name="firstname"
-              value={firstname}
-              onChange={(e) => setFirstname(e.target.value)}
+              value={formData.firstname}
+              onChange={handleChange}
               className="form-control"
               placeholder="Your Name"
               required
@@ -58,8 +51,8 @@ const handleSubmit = async (e) => {
             <input
               type="text"
               name="lastname"
-              value={lastname}
-              onChange={(e) => setLastname(e.target.value)}
+              value={formData.lastname}
+              onChange={handleChange}
               className="form-control"
               placeholder="Your Name"
               required
@@ -74,8 +67,8 @@ const handleSubmit = async (e) => {
             <input
               type="email"
               name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={formData.email}
+              onChange={handleChange}
               className="form-control"
               placeholder="Your Name"
               required
@@ -91,8 +84,8 @@ const handleSubmit = async (e) => {
             </label>
             <textarea
               name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              value={formData.message}
+              onChange={handleChange}
               cols={30}
               rows={4}
               placeholder="There are many variations of passages."

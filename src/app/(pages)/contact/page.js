@@ -39,7 +39,7 @@ const Contact = () => {
         <div className="container">
           <div className="row d-flex align-items-end">
             <div className="col-lg-5 position-relative">
-              <div className="home8-contact-form default-box-shadow1 bdrs12 bdr1 p30 mb30-md bgc-white">
+              <div className="home8-contact-form default-box-shadow1 p30 mb30-md contact_form">
                 <h4 className="form-title mb25">
                   Have questions? Get in touch!
                 </h4>
